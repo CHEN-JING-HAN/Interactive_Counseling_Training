@@ -1,0 +1,2796 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#315c4e">
+  <meta name="description" content="從基礎技巧、學派理解到策略應用，為諮商初學者與跨領域學習者整理的閱讀與筆記空間。">
+  <title>聽見｜諮商學習資料庫</title>
+  <style>
+    /* 【跟生成式AI 協作完成的】我把版型固定在這裡，新增教材只更新資料區。 */
+    :root{--paper:#f7f5ef;--surface:#ffffff;--ink:#263d36;--muted:#65716b;--green:#315c4e;--sage:#e7eee6;--sand:#efe8dc;--line:#d9dfd5;--rust:#8a513a;--max:1120px;--radius:18px;--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+    
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:120px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+    button,input,textarea,select{font:inherit}
+    button,a,input,textarea{touch-action:manipulation}
+    button,a{-webkit-tap-highlight-color:transparent}
+    button{cursor:pointer}
+    a{color:inherit;text-decoration:none}
+    button{color:inherit}
+    svg{flex-shrink:0}
+    a,button,input,textarea{outline-offset:5px}
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #a56837}
+    button:disabled{cursor:default;opacity:.55}
+    ::selection{background:#d8e4d5}
+    p{margin:0 0 1em}
+    h1,h2,h3,h4{line-height:1.5;margin:0;color:var(--ink)}
+    h1,h2{font-family:var(--serif);font-weight:600}
+    h3{font-weight:600}
+    ul,ol{padding-left:1.4em}
+    img,svg{max-width:100%}
+    [hidden]{display:none!important}
+    .wrap{width:min(var(--max),calc(100% - 64px));margin-inline:auto}
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    .eyebrow{font-size:11px;font-weight:600;letter-spacing:.2em;color:var(--green);text-transform:uppercase}
+    .skip-link{position:fixed;left:20px;top:-100px;background:var(--ink);color:white;padding:10px 20px;z-index:100}
+    .skip-link:focus{top:12px}
+    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+    .icon{width:20px;height:20px;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    .header-inner{min-height:88px;display:flex;align-items:center;gap:34px}
+    .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+    .brand-mark{width:36px;height:42px;color:var(--green)}
+    .brand-title{font-family:var(--serif);font-size:25px;letter-spacing:.12em;line-height:1.3}
+    .brand-sub{display:block;font-size:10px;color:var(--muted);letter-spacing:.18em;margin-top:2px}
+    .primary-nav{display:flex;align-items:center;gap:25px;margin-left:auto}
+    .primary-nav a{font-size:14px;white-space:nowrap;position:relative;padding:31px 0}
+    .primary-nav a::after{content:"";height:2px;position:absolute;bottom:19px;left:0;right:0;background:var(--green);transform:scaleX(0);transition:transform .18s}
+    .primary-nav a:hover::after,.primary-nav a[aria-current="page"]::after{transform:scaleX(1)}
+    .header-tools{display:flex;align-items:center;gap:16px;white-space:nowrap}
+    .tool-link{display:flex;align-items:center;gap:6px;font-size:13px}
+    .note-count{background:var(--sage);font-size:11px;min-width:21px;height:21px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+    .header-divider{height:24px;width:1px;background:var(--line)}
+    main{min-height:65vh}
+    main:focus{outline:0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 19px;border:1px solid var(--green);border-radius:6px;font-size:14px;font-weight:500;line-height:1.65;background:var(--green);color:white;transition:background .15s,transform .15s;text-align:center}
+    .btn:hover{background:#244b3f;transform:translateY(-1px)}
+    .btn-secondary{background:transparent;color:var(--green);border-color:var(--line)}
+    .btn-secondary:hover{background:var(--sage)}
+    .btn-small{padding:7px 12px;font-size:13px}
+    .text-link{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:14px}
+    .text-link:hover{text-decoration:underline;text-underline-offset:5px}
+    .icon-button{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--green)}
+    .icon-button:hover,.icon-button[aria-pressed="true"]{background:var(--sage)}
+    .icon-button[aria-pressed="true"] .icon{fill:var(--green);stroke:var(--green)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:35px;padding:64px 0 48px}
+    .hero h1{font-size:clamp(38px,4.3vw,54px);letter-spacing:.07em;line-height:1.45;margin:17px 0 22px}
+    .hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+    .hero h1 em::after{content:"";position:absolute;left:0;right:4px;bottom:3px;height:8px;background:#d4dec8;z-index:-1}
+    .hero-copy>p{max-width:435px;color:var(--muted);font-size:16px;line-height:1.95}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+    .hero-caption{font-size:12px!important;margin-top:18px!important;letter-spacing:.05em}
+    .hero-art{position:relative;padding:8px 10px 0}
+    .hero-art>svg{width:100%;display:block;max-height:380px}
+    .art-caption{position:absolute;bottom:12px;right:20px;font-family:var(--serif);font-size:13px;letter-spacing:.15em;color:var(--green)}
+    .search-band{display:flex;align-items:center;gap:30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:21px 0}
+    .search-band>p{font-size:13px;flex-shrink:0;margin:0;color:var(--muted)}
+    .search-form{display:flex;align-items:center;gap:12px;min-width:0;flex:1}
+    .search-form input{border:0;background:transparent;color:var(--ink);width:100%;min-width:0;padding:7px 0;font-size:15px}
+    .search-form input::placeholder{color:#6e7872}
+    .search-form button{border:0;background:transparent;color:var(--green);padding:7px;display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:13px}
+    .section{padding:48px 0 6px}
+    .section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:25px}
+    .section-heading h2{font-size:28px;letter-spacing:.05em}
+    .section-heading p{font-size:14px;color:var(--muted);margin:5px 0 0}
+    .topics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .topic-card{border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 20px;min-height:243px;display:flex;flex-direction:column;background:rgba(255,255,255,.4);transition:transform .18s,border-color .18s}
+    .topic-card:hover{transform:translateY(-4px);border-color:#8da38e}
+    .topic-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .topic-number{font-family:var(--serif);font-size:27px;color:#768b73;line-height:1}
+    .topic-card h3{font-family:var(--serif);font-size:22px;margin-bottom:7px}
+    .topic-card p{font-size:13px;color:var(--muted);line-height:1.85;margin-bottom:20px}
+    .topic-footer{margin-top:auto;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--green)}
+    .topic-card:nth-child(1){background:#e9eee4}
+    .topic-card:nth-child(2){background:#f0ebe0}
+    .topic-card:nth-child(3){background:#edeedb}
+    .topic-card:nth-child(4){background:#e9eee9}
+    .reading-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .reading-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);display:flex;flex-direction:column;overflow:hidden;transition:border-color .15s}
+    .reading-card:hover{border-color:#8da38e}
+    .card-main{padding:24px 24px 12px;display:block;flex:1}
+    .card-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:11px;margin-bottom:12px}
+    .pill{display:inline-flex;gap:5px;align-items:center;border-radius:4px;background:var(--sage);padding:2px 8px;font-size:11px;color:var(--green)}
+    .reading-card h3{font-family:var(--serif);font-size:22px;line-height:1.65;margin-bottom:12px}
+    .reading-card p{font-size:13px;color:var(--muted);line-height:1.9;margin:0}
+    .card-footer{display:flex;align-items:center;justify-content:space-between;padding:10px 23px 19px;gap:12px;font-size:12px;color:var(--green)}
+    .card-footer .icon-button{width:32px;height:32px}
+    .starter-num{font-family:var(--serif);font-size:27px;color:#8c9d84}
+    .quote-band{margin-top:48px;border-radius:var(--radius);padding:30px 36px;background:var(--sage);display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .quote-band h2{font-size:22px;margin:5px 0 8px}
+    .quote-band p{font-size:14px;color:var(--muted);margin:0;max-width:640px}
+    .quote-band>.icon{width:48px;height:48px;stroke-width:1;color:#678164}
+    .news-list{border-top:1px solid var(--line)}
+    .news-row{display:grid;grid-template-columns:130px 1fr 32px;gap:24px;align-items:center;border-bottom:1px solid var(--line);padding:23px 0}
+    .news-row:hover h3{text-decoration:underline;text-underline-offset:5px}
+    .news-row time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+    .news-row h3{font-size:17px;margin:3px 0 5px;font-weight:500}
+    .news-row p{font-size:13px;color:var(--muted);margin:0}
+    .continue-strip{margin-top:30px;padding:15px 20px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--green);border-radius:7px;display:flex;justify-content:space-between;gap:15px;align-items:center}
+    .continue-strip small{color:var(--muted);display:block}
+    .continue-strip strong{font-size:14px;font-weight:500}
+    .page-head{padding:47px 0 27px}
+    .breadcrumbs{display:flex;gap:10px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:12px;margin-bottom:22px}
+    .breadcrumbs a:hover{text-decoration:underline}
+    .page-head h1{font-size:38px;letter-spacing:.05em;margin-top:9px}
+    .page-head .intro{max-width:710px;font-size:15px;color:var(--muted);margin:14px 0 0}
+    .category-summary{display:flex;align-items:center;gap:14px;margin:22px 0 0;font-size:13px;color:var(--muted)}
+    .progress-track{height:5px;width:100px;background:var(--line);border-radius:8px;overflow:hidden}
+    .progress-track span{display:block;background:var(--green);height:100%}
+    .list-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:23px;border-bottom:1px solid var(--line);padding-bottom:17px}
+    .filter-group{display:flex;gap:7px;flex-wrap:wrap}
+    .filter{border:1px solid transparent;background:transparent;border-radius:5px;padding:6px 12px;font-size:13px;color:var(--muted)}
+    .filter[aria-pressed="true"]{background:var(--green);color:white}
+    .filter:hover{border-color:var(--line)}
+    .lesson-list{display:grid;gap:12px}
+    .lesson-row{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px;background:var(--surface);min-width:0}
+    .lesson-main{display:grid;grid-template-columns:52px 1fr 68px;gap:16px;align-items:center;flex:1;min-width:0;padding:22px 22px 23px}
+    .lesson-number{font-family:var(--serif);font-size:25px;color:#778c75;align-self:start;padding-top:5px}
+    .lesson-main h2{font-family:var(--sans);font-size:18px;margin:3px 0 7px;font-weight:500;line-height:1.7}
+    .lesson-main p{font-size:13px;margin:0;color:var(--muted)}
+    .lesson-time{font-size:12px;white-space:nowrap;color:var(--muted)}
+    .lesson-row>.icon-button{margin-right:20px;flex-shrink:0}
+    .lesson-row:hover{border-color:#93a58b}
+    .tag-line{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+    .article-head{max-width:800px}
+    .article-head h1{font-size:36px;line-height:1.6;letter-spacing:.025em;margin:12px 0 16px;overflow-wrap:anywhere}
+    .article-head .article-summary{font-size:16px;color:var(--muted);line-height:1.9;max-width:710px}
+    .article-meta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;color:var(--muted);font-size:12px;margin:17px 0 0}
+    .article-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:50px;align-items:start;margin-top:18px}
+    .article-body{min-width:0;font-size:16px;line-height:2}
+    .learning-goals{padding:22px 26px;background:var(--sage);border-radius:12px;margin-bottom:32px}
+    .learning-goals h2{font-size:18px;font-family:var(--sans);margin-bottom:9px}
+    .learning-goals ul{font-size:14px;margin:0}
+    .article-section{padding-top:10px;margin-bottom:27px}
+    .article-section h2{font-size:23px;margin-bottom:16px;display:flex;gap:12px;align-items:baseline}
+    .section-index{font-family:var(--sans);font-size:11px;color:#75876d;font-weight:500;letter-spacing:.05em}
+    .article-section p:last-child{margin-bottom:0}
+    .article-section ul{margin:8px 0}
+    .article-section li{padding-left:3px;margin:5px 0}
+    .example-box{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:32px 0}
+    .box-heading{padding:18px 24px;background:#f1ede3;border-bottom:1px solid var(--line)}
+    .box-heading h2{font-size:21px}
+    .box-heading p{font-size:12px;color:var(--muted);margin:4px 0 0}
+    .example-body{padding:23px}
+    .client-line{font-family:var(--serif);font-size:18px;padding:0 0 20px;border-bottom:1px solid var(--line);margin-bottom:18px}
+    .response-block+.response-block{margin-top:18px}
+    .response-block .response-label{font-size:12px;font-weight:500;color:var(--muted)}
+    .response-block p{font-size:15px;margin:7px 0}
+    .response-block.better{border-left:3px solid #7a9471;padding:5px 17px;background:#f1f5ed}
+    .response-explanation{font-size:13px!important;color:var(--muted);margin-top:16px!important}
+    .practice-box{padding:25px;background:var(--sand);border-radius:12px;margin:32px 0}
+    .practice-box h2{font-size:22px;margin:8px 0 12px}
+    .practice-box p{font-size:15px}
+    .practice-box ul{font-size:13px;color:var(--muted);margin-bottom:18px}
+    .ml-box{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;margin:30px 0}
+    .ml-box h2{font-size:15px;font-family:var(--sans);display:flex;align-items:center;gap:8px;margin-bottom:9px}
+    .ml-box p{font-size:13px;color:var(--muted);margin:0}
+    .sources{font-size:13px;margin:28px 0}
+    .sources summary{cursor:pointer;color:var(--green);padding:13px 0;font-weight:500}
+    .sources ol{padding-left:20px}
+    .sources a{color:var(--green);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+    .sources li{margin-bottom:10px}
+    .collaboration-note{font-size:12px;color:var(--muted);line-height:1.8;border-top:1px solid var(--line);padding-top:15px}
+    .article-nav{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:30px;padding-top:23px;gap:25px}
+    .article-nav a{font-size:14px;color:var(--green)}
+    .article-nav a:last-child{text-align:right}
+    .article-nav small{display:block;font-size:11px;color:var(--muted);margin-bottom:6px}
+    .sidebar{position:sticky;top:113px}
+    .note-panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:21px}
+    .note-panel h2{font-family:var(--serif);font-size:20px;display:flex;align-items:center;gap:9px}
+    .note-panel>p{font-size:12px;color:var(--muted);margin:8px 0 16px;line-height:1.8}
+    .note-input{display:block;width:100%;min-height:205px;resize:vertical;border:1px solid var(--line);background:#fdfcf8;color:var(--ink);border-radius:8px;padding:13px;font-size:14px;line-height:1.9}
+    .note-input::placeholder{color:#768075}
+    .note-status{font-size:11px;color:var(--muted);min-height:21px;margin:8px 0 12px;display:flex;gap:6px;align-items:center}
+    .note-status.error{color:#98462c}
+    .panel-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .panel-actions .btn{flex:1;font-size:12px;padding:8px 9px;white-space:nowrap}
+    .local-note{font-size:11px!important;color:var(--muted);line-height:1.75;margin:16px 0 0!important}
+    .toc{padding:23px 7px 0}
+    .toc h2{font-size:12px;font-family:var(--sans);color:var(--muted);font-weight:500;margin-bottom:10px}
+    .toc button{display:block;border:0;background:transparent;text-align:left;font-size:12px;color:var(--muted);padding:6px 0;line-height:1.7;width:100%}
+    .toc button:hover{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+    .related-section{margin-top:38px}
+    .related-section h2{font-size:22px;margin-bottom:13px}
+    .related-links{display:flex;gap:10px;flex-wrap:wrap}
+    .related-links a{font-size:12px;border:1px solid var(--line);border-radius:5px;padding:7px 10px;background:var(--surface);color:var(--green)}
+    .related-links a:hover{background:var(--sage)}
+    .empty-state{background:var(--surface);border:1px dashed #b9c5b3;border-radius:var(--radius);padding:48px 24px;text-align:center;margin:20px 0}
+    .empty-state>.icon{width:35px;height:35px;color:#7f9479;margin-bottom:15px}
+    .empty-state h2{font-size:22px;margin-bottom:11px}
+    .empty-state p{font-size:14px;color:var(--muted);max-width:500px;margin:0 auto 20px}
+    .search-page-form{max-width:800px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 18px;margin:7px 0 27px}
+    .search-suggestions{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:24px}
+    .search-suggestions a{font-size:12px;padding:4px 12px;border:1px solid var(--line);border-radius:20px}
+    .notes-toolbar{padding:21px 24px;background:var(--sage);border-radius:12px;margin-bottom:25px;display:flex;justify-content:space-between;gap:18px;align-items:center}
+    .notes-toolbar p{font-size:13px;color:var(--muted);margin:0;max-width:440px}
+    .export-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .note-list{display:grid;gap:20px}
+    .saved-note{padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+    .saved-note-header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:16px}
+    .saved-note h2{font-size:21px;margin-top:5px}
+    .saved-note h2 a:hover{text-decoration:underline;text-underline-offset:5px}
+    .saved-note .note-input{min-height:130px}
+    .saved-note .note-status{margin-bottom:0}
+    .saved-list{margin-top:35px}
+    .storage-warning{margin:18px auto 0;padding:13px 18px;background:#f5e9db;color:#7f432c;border:1px solid #d4b698;border-radius:8px;font-size:13px}
+    .import-result{font-size:13px;padding:17px 20px;border-left:3px solid var(--green);background:var(--surface);white-space:pre-line;margin-bottom:20px}
+    .site-footer{margin-top:70px;padding:35px 0 28px;border-top:1px solid var(--line)}
+    .footer-inner{display:flex;justify-content:space-between;gap:35px;align-items:flex-start}
+    .footer-brand{font-family:var(--serif);font-size:19px;letter-spacing:.1em}
+    .footer-copy{font-size:12px;color:var(--muted);max-width:490px;margin:8px 0 0}
+    .footer-meta{font-size:11px;color:var(--muted);text-align:right;line-height:2}
+    .footer-meta a:hover{text-decoration:underline}
+    .toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,16px);background:var(--ink);color:#fff;border-radius:8px;padding:12px 20px;font-size:13px;max-width:calc(100% - 36px);z-index:40;opacity:0;pointer-events:none;transition:opacity .15s,transform .15s}
+    .toast.visible{opacity:1;transform:translate(-50%,0)}
+    .no-script{padding:40px;background:var(--sand)}
+    
+    @media(min-width:1440px){.hero{padding-top:78px;padding-bottom:58px}
+    }
+    
+    @media(max-width:1060px){.header-inner{gap:22px}
+    .primary-nav{gap:16px}
+    .header-tools{gap:11px}
+    .article-layout{gap:30px;grid-template-columns:minmax(0,1fr) 270px}
+    .hero h1{font-size:43px}
+    .topic-card{padding:20px 17px}
+    .reading-card h3{font-size:20px}
+    }
+    
+    @media(max-width:900px){.header-inner{flex-wrap:wrap;padding-top:14px;gap:0;min-height:0}
+    .brand{margin-right:auto}
+    .header-tools{gap:18px}
+    .primary-nav{order:3;width:100%;margin-top:11px;justify-content:space-between;gap:15px}
+    .primary-nav a{padding:12px 0 14px;font-size:13px}
+    .primary-nav a::after{bottom:6px}
+    .hero{padding-top:42px;gap:15px}
+    .hero h1{font-size:37px}
+    .topics-grid{grid-template-columns:repeat(2,1fr)}
+    .topic-card{min-height:205px}
+    .topic-top{margin-bottom:15px}
+    .reading-grid{gap:12px}
+    .card-main{padding:18px 18px 12px}
+    .card-footer{padding:8px 17px 15px}
+    .article-layout{display:block}
+    .sidebar{position:static;margin-top:35px}
+    .note-panel{padding:24px}
+    .note-input{min-height:180px}
+    .toc{display:none}
+    .article-head{max-width:none}
+    .notes-toolbar{align-items:flex-start;flex-direction:column}
+    .hero-caption{font-size:11px!important}
+    .art-caption{font-size:11px;right:0;bottom:0}
+    }
+    
+    @media(max-width:650px){.wrap{width:calc(100% - 36px)}
+    .brand-title{font-size:23px}
+    .brand-sub{font-size:9px}
+    .brand-mark{width:31px;height:36px}
+    .header-tools{gap:13px}
+    .tool-link{font-size:12px}
+    .header-divider{display:none}
+    .hero{grid-template-columns:1fr;padding:35px 0 28px;gap:0}
+    .hero h1{font-size:37px;margin:15px 0 17px}
+    .hero-copy>p{font-size:14px;max-width:100%}
+    .hero-art{position:absolute;width:130px;right:19px;top:151px;opacity:.15;z-index:-1;padding:0}
+    .art-caption{display:none}
+    .hero-caption{margin-bottom:0!important}
+    .hero-actions{margin-top:22px}
+    .search-band{display:block;padding:15px 0}
+    .search-band>p{font-size:11px;margin-bottom:5px}
+    .search-form{gap:8px}
+    .search-form input{font-size:13px}
+    .search-form button{font-size:12px}
+    .section{padding-top:34px}
+    .section-heading{gap:14px;align-items:flex-start;margin-bottom:18px}
+    .section-heading h2{font-size:24px}
+    .section-heading p{font-size:12px}
+    .section-heading .text-link{font-size:12px;white-space:nowrap;margin-top:8px}
+    .topics-grid{gap:11px}
+    .topic-card{padding:18px 15px;min-height:225px}
+    .topic-card h3{font-size:20px}
+    .topic-card p{font-size:12px;margin-bottom:13px}
+    .topic-number{font-size:23px}
+    .topic-top{margin-bottom:20px}
+    .topic-footer{font-size:11px}
+    .reading-grid{grid-template-columns:1fr}
+    .reading-card h3{font-size:21px;margin-bottom:8px}
+    .card-main{padding:20px 20px 10px}
+    .card-footer{padding:0 20px 15px}
+    .card-meta{margin-bottom:8px}
+    .quote-band{margin-top:34px;padding:23px}
+    .quote-band>.icon{display:none}
+    .quote-band h2{font-size:20px}
+    .quote-band p{font-size:13px}
+    .news-row{grid-template-columns:1fr 24px;gap:5px 12px;padding:20px 0}
+    .news-row time{grid-column:1;font-size:11px}
+    .news-row>div{grid-column:1}
+    .news-row>.icon{grid-column:2;grid-row:1/3}
+    .news-row h3{font-size:16px}
+    .news-row p{font-size:12px}
+    .continue-strip{align-items:flex-start;padding:13px 16px}
+    .continue-strip .text-link{font-size:12px;white-space:nowrap}
+    .page-head{padding-top:29px;padding-bottom:23px}
+    .page-head h1{font-size:30px}
+    .page-head .intro{font-size:14px}
+    .breadcrumbs{font-size:11px;margin-bottom:17px}
+    .lesson-main{grid-template-columns:30px minmax(0,1fr);gap:10px;padding:16px 12px}
+    .lesson-number{font-size:22px}
+    .lesson-time{grid-column:2;font-size:11px}
+    .lesson-main h2{font-size:16px}
+    .lesson-main p{font-size:12px}
+    .lesson-row>.icon-button{width:32px;height:32px;margin-right:12px;align-self:flex-start;margin-top:19px}
+    .tag-line{font-size:10px;gap:7px}
+    .list-toolbar{font-size:12px}
+    .filter{font-size:12px;padding:5px 10px}
+    .article-head h1{font-size:28px}
+    .article-head .article-summary{font-size:14px}
+    .article-meta{font-size:11px;gap:10px}
+    .article-layout{margin-top:7px}
+    .article-body{font-size:15px;line-height:2}
+    .article-section h2{font-size:21px;gap:10px}
+    .learning-goals{padding:20px}
+    .learning-goals ul{font-size:13px}
+    .example-body,.box-heading{padding:19px}
+    .practice-box{padding:21px}
+    .article-nav{gap:18px}
+    .article-nav a{font-size:13px}
+    .note-panel{padding:21px}
+    .notes-toolbar{padding:20px}
+    .export-actions .btn{font-size:12px;padding:7px 10px}
+    .saved-note{padding:20px}
+    .saved-note-header{gap:10px}
+    .saved-note h2{font-size:19px}
+    .saved-note-header .text-link{font-size:12px;white-space:nowrap}
+    .footer-inner{flex-direction:column;gap:22px}
+    .footer-meta{text-align:left}
+    .site-footer{margin-top:45px;padding-top:26px}
+    .search-page-form{padding:9px 11px}
+    .header-tools .note-count{display:none}
+    .empty-state{padding:35px 20px}
+    }
+    
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+    *,*::before,*::after{transition:none!important;animation:none!important}
+    }
+    
+    @media print{.site-header,.sidebar,.site-footer,.toast,.article-nav,.related-section,.btn,.skip-link,.storage-warning{display:none!important}
+    .wrap{width:100%;max-width:none}
+    .article-layout{display:block}
+    .article-head{max-width:none}
+    .page-head{padding-top:0}
+    .article-body{font-size:12pt}
+    body{background:white;color:black}
+    .sources{display:block}
+    .sources>summary{display:none}
+    .sources:not([open])>*{display:block}
+    }
+    
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" id="skip-main">跳到主要內容</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="聽見，回首頁">
+        <svg class="brand-mark" viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M20 39V17M20 29C7 28 6 17 6 13c9 0 15 5 14 16ZM20 22C20 10 28 5 35 5c0 10-5 17-15 17Z" stroke="currentColor" stroke-width="1.7"/><path d="M5 38c5-2 10-1 15 2 5-3 10-4 15-2" stroke="currentColor" stroke-width="1.7"/></svg>
+        <span><span class="brand-title">聽見</span><span class="brand-sub">諮商學習資料庫</span></span>
+      </a>
+      <nav class="primary-nav" aria-label="主題導覽" id="primary-nav"></nav>
+      <div class="header-tools"><a class="tool-link" href="#search" aria-label="搜尋教材"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>搜尋</span></a><span class="header-divider" aria-hidden="true"></span><a class="tool-link" href="#notes"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h13a1 1 0 0 1 1 1v17H6a3 3 0 0 1-3-3V5a2 2 0 0 1 2-2Z"/><path d="M7 3v14M3 17h16M10 8h6M10 11h4"/></svg><span>我的筆記</span><span class="note-count" id="note-count">0</span></a></div>
+    </div>
+  </header>
+  <div class="wrap storage-warning" id="storage-warning" role="status" hidden></div>
+  <main id="main" class="wrap" tabindex="-1"></main>
+  <noscript><div class="wrap no-script">這個網站需要啟用 JavaScript 才能顯示教材與筆記。所有教材已包含在此 HTML 檔案中，不需要登入或連線至模型服務。</div></noscript>
+  <footer class="site-footer"><div class="wrap footer-inner"><div><div class="footer-brand">聽見 · 慢慢學，慢慢理解</div><p class="footer-copy">給諮商初學者與跨領域學習者的閱讀空間。教材與虛構情境供概念學習，實際諮商工作仍需要正式訓練與督導。</p></div><div class="footer-meta">陳敬涵 · 諮商學習專案<br><a href="#category/basics">從基礎開始</a>　·　<a href="#notes">整理我的筆記</a><br>以理解為起點，保留每個人的不同。</div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" class="sr-only" type="file" accept="application/json,.json" aria-label="選擇筆記備份檔" tabindex="-1">
+<!-- CONTENT_DATA_START -->
+<script id="site-content" type="application/json">
+{
+  "schemaVersion": 1,
+  "site": {
+    "title": "聽見｜諮商學習資料庫",
+    "description": "給諮商初學者與跨領域學習者的閱讀與筆記空間。"
+  },
+  "categories": [
+    {
+      "id": "basics",
+      "number": "01",
+      "title": "基礎技術",
+      "description": "從聽懂、確認到回應，認識對話裡的基本功。",
+      "kicker": "Foundations"
+    },
+    {
+      "id": "approaches",
+      "number": "02",
+      "title": "學派理解",
+      "description": "看看不同學派，如何理解一個人的改變。",
+      "kicker": "Approaches"
+    },
+    {
+      "id": "strategies",
+      "number": "03",
+      "title": "策略應用",
+      "description": "把技巧放回情境，練習選擇與調整回應。",
+      "kicker": "Practice \u0026 context"
+    },
+    {
+      "id": "updates",
+      "number": "04",
+      "title": "新聞與新知",
+      "description": "帶著研究限制，閱讀專業消息與新觀點。",
+      "kicker": "Research \u0026 perspectives"
+    }
+  ],
+  "articles": [
+    {
+      "schemaVersion": 1,
+      "id": "basic-open-question",
+      "category": "basics",
+      "number": "01-01",
+      "order": 10,
+      "title": "探問（開放式問句）",
+      "summary": "練習提出讓對方選擇敘說方向的問題，分辨探索與藏在問句裡的建議。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "探問",
+        "開放式問句",
+        "探索"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能把帶有建議的問句改成開放邀請。",
+        "能判斷一次提問是否只聚焦一件事。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "順著當事人的談話與關注點，提出能讓對方自行組織答案的問題，邀請更多經驗、感受或想法。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "需要邀請談話、理解脈絡，或讓當事人決定往哪裡探索時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "先接住剛剛聽到的重點，再決定問題是否有助理解。",
+            "一次問一個問題，常用「什麼」「如何」「可以談談……」。",
+            "問完留出回答空間，順著答案往下走。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "問句開頭開放，不代表內容就開放；「你為什麼不乾脆拒絕？」已帶入建議。為確認必要資訊而用封閉問句仍可適當。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。學生還在尋找談話起點。",
+        "client": "最近事情好多，不知道從哪裡說。",
+        "lessHelpful": "是不是又跟家裡吵架了？",
+        "response": "在這些事情裡，此刻最希望我先理解的是哪一件？",
+        "explanation": "讓當事人選擇起點，沒有把尚未出現的情節放進問題。"
+      },
+      "practice": {
+        "prompt": "將「你怎麼不直接拒絕？」改成邀請對方描述經驗的問句。",
+        "reflection": [
+          "問題是否暗示了你認為正確的答案？",
+          "有沒有同時塞進兩三個問題？"
+        ]
+      },
+      "related": [
+        "basic-paraphrase",
+        "strategy-first-understand",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-paraphrase",
+      "category": "basics",
+      "number": "01-02",
+      "order": 20,
+      "title": "重述",
+      "summary": "抓住一個重點，用自己的話核對理解，不替當事人補上原因。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "重述",
+        "核對理解",
+        "傾聽"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能在換句話說時保留原意。",
+        "能區分內容重述與新增的原因推測。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "用自己的話，簡短回應當事人剛才表達的主要內容與意思，讓對方確認你是否聽懂；不加入新的原因推論。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "一個重點值得停下來確認，或想讓當事人繼續沿著自己的意思敘說時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "抓住最近一句或一小段中最重要的意思。",
+            "刪去枝節，用貼近當事人語氣的話重新表達。",
+            "留意回應，必要時問「我的理解有接近嗎？」並修正。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "逐字鸚鵡學舌，或把重述變成「所以你就是不敢拒絕」等評價。重述與摘要的範圍不同，但沒有固定句數界線。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。學生談分組報告。",
+        "client": "大家說一起做，最後卻還是我把報告補完。",
+        "lessHelpful": "你就是太怕別人生氣，才一直替大家做。",
+        "response": "原先說好一起完成的報告，最後還是由你補上缺的部分。",
+        "explanation": "保留合作與收尾的落差，沒有補上未被說出的動機。"
+      },
+      "practice": {
+        "prompt": "虛構練習：「我想拒絕這次聚餐，可是又不知道怎麼開口。」請保留原意換句話說。",
+        "reflection": [
+          "有沒有把原因推測當成當事人的意思？",
+          "回應是否比逐字重複更精簡清楚？"
+        ]
+      },
+      "related": [
+        "basic-summary",
+        "basic-basic-empathy",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-summary",
+      "category": "basics",
+      "number": "01-03",
+      "order": 60,
+      "title": "摘要",
+      "summary": "把幾個相關重點串成談話主線，讓當事人核對並選擇接下來的焦點。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "摘要",
+        "聚焦",
+        "整理談話"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能整理彼此相關的內容與感受。",
+        "能區分一個重點的重述與一段談話的摘要。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "整合一段談話中的幾個相關重點，使內容、感受或主題之間的關聯更清楚，並邀請當事人核對。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "資訊較多、需要聚焦或轉換主題，或一次談話開始、接近結束時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "找出一段談話中彼此相關的主題與感受。",
+            "用精簡的方式串起重點，不重播所有細節。",
+            "核對是否遺漏，邀請當事人決定接下來的焦點。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "只列事件而漏掉當事人的感受，或在對方仍需要表達時急著收尾。摘要也不等於提出新的解釋。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。當事人談生活負擔。",
+        "client": "工作常晚下班，回家又要照顧家人；我很累，也想留一點自己的時間。",
+        "lessHelpful": "所以你應該少管家人的事。",
+        "response": "你一邊工作、一邊照顧家人，已經很累，也想留些時間給自己。這幾件事裡，你想先談哪一部分？",
+        "explanation": "串起工作、照顧與個人需要，沒有代替當事人排序。"
+      },
+      "practice": {
+        "prompt": "虛構練習：整理「想換工作、擔心收入、又怕家人不支持」三個重點，最後邀請核對。",
+        "reflection": [
+          "有沒有漏掉當事人在意的感受？",
+          "是否加入了原話沒有的結論？"
+        ]
+      },
+      "related": [
+        "basic-paraphrase",
+        "basic-concreteness",
+        "strategy-first-understand"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-process-comment",
+      "category": "basics",
+      "number": "01-04",
+      "order": 80,
+      "title": "歷程評述",
+      "summary": "看見談話前後如何變化，先描述可觀察的過程，再一起理解它。",
+      "level": "入門",
+      "minutes": 4,
+      "tags": [
+        "歷程評述",
+        "互動變化",
+        "觀察"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能描述一段有根據的互動變化。",
+        "能分開觀察與對動機的解釋。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "把一段過程中觀察到的語言、非語言、情緒或互動變化說出來，陪當事人重新看見自己經歷的過程與模式。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "談話重點在「怎麼互動、怎麼轉變、怎麼卡住」，而只整理事件內容還不夠時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "描述實際觀察到的一段變化，而非先替對方貼標籤。",
+            "把前後的反應串起來，讓當事人一起回看歷程。",
+            "用中立、可修正的語氣邀請覺察，也關注當事人聽後的感受。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "變成事件摘要、單純報告肢體動作，或斷言「你每次都在逃避」。觀察與對其意義的推測要分開。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。當事人說想早點下班，停頓後轉談主管。",
+        "client": "我其實想早點回家……可是主管也撐很久了。",
+        "lessHelpful": "你總是討好別人，不敢堅持。",
+        "response": "剛才你說想早點回家，停了一下，又談到主管的辛苦。這個轉折對你有什麼意義？",
+        "explanation": "先描述已提供的轉折，再邀請理解，不替動機下結論。"
+      },
+      "practice": {
+        "prompt": "虛構練習：當事人先說想拒絕邀約，下一句卻替對方找理由。請描述這個變化。",
+        "reflection": [
+          "哪些是觀察，哪些仍是推測？",
+          "有沒有用「總是」或人格標籤定義對方？"
+        ]
+      },
+      "related": [
+        "basic-immediacy",
+        "basic-summary",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門",
+      "mlLens": "文字沒有提供的語氣、表情或停頓，不能當成已觀察到的特徵。"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-immediacy",
+      "category": "basics",
+      "number": "01-05",
+      "order": 90,
+      "title": "立即性",
+      "summary": "把眼前助人關係中的疑慮與感受帶進談話，留出一起修正互動的機會。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "立即性",
+        "助人關係",
+        "此時此地"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能辨認回應是否聚焦雙方當下的關係。",
+        "能回應關係疑慮而不要求對方安撫自己。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "直接探索此時此地，當事人與助人者之間正在發生的感受、期待或互動，讓雙方的關係成為可以理解與調整的材料。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "當事人對你有疑慮、覺得不被理解，或你們當下的互動值得一起釐清時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "指出與眼前這段關係有關的具體訊息，避免替對方定義。",
+            "承擔自己的說法或互動可能造成的影響。",
+            "邀請當事人說出對你及此刻談話的感受，一起調整步調。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "「你現在很難過」本身是感受反映，未必是立即性；立即性的焦點是眼前的助人關係，也不應要求當事人安撫助人者。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。助人者剛提出建議。",
+        "client": "你也覺得我想太多，所以才要我趕快做決定嗎？",
+        "lessHelpful": "我沒有那個意思，是你誤會了。",
+        "response": "我剛才很快提出做法。你現在會不會覺得，我還沒理解你，就要你做決定？",
+        "explanation": "留意自己說法的可能影響，聚焦此刻雙方的關係。"
+      },
+      "practice": {
+        "prompt": "虛構練習：「你是不是也對我失望了？」請回應當事人對你們關係的擔心。",
+        "reflection": [
+          "焦點是眼前的關係，還是其他人的關係？",
+          "是否留下讓對方說出不同感受的空間？"
+        ]
+      },
+      "related": [
+        "basic-process-comment",
+        "basic-feeling-reflection",
+        "strategy-first-understand"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-empowerment",
+      "category": "basics",
+      "number": "01-06",
+      "order": 100,
+      "title": "賦能",
+      "summary": "從真實行動看見能力與選擇，把對進展的理解交回當事人。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "賦能",
+        "能力與資源",
+        "選擇"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能用具體行動說明努力與能力。",
+        "能區分賦能與空泛稱讚。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "從當事人的經驗出發，幫助對方注意到自己已做到、能做到的部分，以及其中的能力、影響力與選擇。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "當事人自信低落、自我批評，或在改變中看不見自己的進展與資源時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "先承接困難與感受，再指出真實、具體的行動或進展。",
+            "邀請當事人說出自己是怎麼做到的。",
+            "協助當事人辨識可運用的能力與選擇，由對方決定如何使用。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "只說「你好棒、一定可以」，或為了鼓勵而忽略困境。賦能的重點是當事人辨識自己的能力，不是取得你的好評。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。當事人嘗試表達可幫忙的範圍。",
+        "client": "我還是很怕，但先看了行程，再跟朋友說只能幫一小時。",
+        "lessHelpful": "你好棒！以後都這樣就不會有問題了。",
+        "response": "雖然會怕，你還是確認了自己的時間，也說清楚能幫忙的範圍。你怎麼做到這一步的？",
+        "explanation": "指出具體做法，沒有保證結果或要求下次做到更多。"
+      },
+      "practice": {
+        "prompt": "虛構練習：「我只寫了十分鐘，至少沒有整晚避開報告。」請指出具體努力，再邀請回看。",
+        "reflection": [
+          "鼓勵是否有原文支持的行動？",
+          "我是否仍讓當事人決定下一步？"
+        ]
+      },
+      "related": [
+        "basic-concreteness",
+        "basic-basic-empathy",
+        "strategy-empathy-not-agreement"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-basic-empathy",
+      "category": "basics",
+      "number": "01-07",
+      "order": 30,
+      "title": "初層次同理心",
+      "summary": "把已表達的處境與感受連在一起，練習貼近而不急著解釋。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "初層次同理心",
+        "承接感受",
+        "理解"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能把已知處境與情緒線索連結起來。",
+        "能辨認同理與建議、保證的差別。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "貼近當事人已說出或脈絡中清楚呈現的感受與意思，讓對方感到自己的處境被理解；不急著推測更深的動機。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "需要建立理解、承接感受，或確認當事人正在經歷什麼時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "先聽對方在意什麼，以及當下有哪些情緒線索。",
+            "用貼近的情緒詞，簡短連結已知的處境或意思。",
+            "保留被修正的空間，依當事人的回應調整理解。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "同理不等於同情、同意對方的判斷或給建議；也不是一定要套用固定的「因為……所以……」句型。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。學生準備課堂報告。",
+        "client": "我練過很多次，還是很緊張，怕大家覺得我很差。",
+        "lessHelpful": "都練那麼多次了，你就別緊張。",
+        "response": "你已經準備很多次，仍很擔心上台時被覺得做得不好，現在很緊張。",
+        "explanation": "連結已知準備與擔心，沒有淡化感受或保證成功。"
+      },
+      "practice": {
+        "prompt": "虛構練習：「我想休息，卻怕朋友覺得我不夠義氣，很為難。」請回應處境與感受。",
+        "reflection": [
+          "情緒是否來自原文或清楚的脈絡？",
+          "有沒有太快給方法，跳過對方的難處？"
+        ]
+      },
+      "related": [
+        "basic-feeling-reflection",
+        "basic-deep-empathy",
+        "strategy-empathy-not-agreement"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-deep-empathy",
+      "category": "basics",
+      "number": "01-08",
+      "order": 70,
+      "title": "深層同理心",
+      "summary": "依已有線索試探還沒說清楚的需要，讓當事人保有確認與修正的權利。",
+      "level": "入門",
+      "minutes": 4,
+      "tags": [
+        "深層同理心",
+        "試探理解",
+        "核對"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能指出一個推測所依據的線索。",
+        "能在理解不貼近時回到當事人的說法。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "依據當事人提供的線索，試探地回應尚未充分說出的感受、想法、期待或需要，並交由當事人確認。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "已有理解與足夠線索，當事人願意往內探索，但某些矛盾或較深的感受還說不清楚時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "先承接已知事件與表層感受。",
+            "只向前試探一步，用「會不會」「也許」「我不確定」等保留語氣。",
+            "明確核對，接受對方說不貼近，並回到對方自己的表達。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "把猜測說成「你其實就是……」，或從少量線索推論童年、人格或病因。深層不表示比較好，貼近當下才是重點。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。當事人已多次談到怕被朋友遺忘。",
+        "client": "我想休息，可是沒幫上忙，好像大家很快就不會想到我。",
+        "lessHelpful": "這一定是你小時候沒有安全感。",
+        "response": "除了怕被忘記，你會不會也在想：如果幫不上忙，自己還有沒有被需要的位置？",
+        "explanation": "依「沒幫忙就被忘記」試探被需要的重要性，仍需對方核對。"
+      },
+      "practice": {
+        "prompt": "從上述例子圈出支持推測的線索；若對方說「不太像」，試寫一句回到他原意的回應。",
+        "reflection": [
+          "拿掉「可能」後，這個推測仍有根據嗎？",
+          "我是否接受對方修正，沒有說服他認同？"
+        ]
+      },
+      "related": [
+        "basic-basic-empathy",
+        "basic-concreteness",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門",
+      "mlLens": "這裡的推測是待確認的理解，不是對內在狀態的確定標記。"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-feeling-reflection",
+      "category": "basics",
+      "number": "01-09",
+      "order": 40,
+      "title": "情感反應",
+      "summary": "用貼近強度的情緒詞回映感受，分清楚情緒與對事件的評價。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "情感反應",
+        "情緒辨識",
+        "感受"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能區分情緒詞與對他人的評價。",
+        "能在情緒命名後留下核對空間。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "將當事人表達或流露的情緒，用貼近其強度的感受詞回映出來，協助對方辨識、表達與接觸情緒。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "情緒明顯但沒有被說出，或當事人需要停下來辨識自己怎麼了時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "同時留意內容、語氣、表情與停頓等線索。",
+            "用少量貼近的情緒詞反映，避免直接替對方下定論。",
+            "停一下，讓當事人確認、細分或更正情緒。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "把想法當成情緒，例如「你覺得他很自私」主要在說評價。情感反應與初層次同理常重疊，本網站依回應的主要焦點練習辨識。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。學生回想小組討論。",
+        "client": "大家都有提案，就我一直講不出來，覺得好丟臉。",
+        "lessHelpful": "你覺得大家都在瞧不起你。",
+        "response": "想到自己當時沒有說出想法，你覺得很難堪。",
+        "explanation": "回映已表達的難堪，沒有把對別人的猜測當成情緒。"
+      },
+      "practice": {
+        "prompt": "虛構練習：「我等了很久，最後還是被取消，真的很失望。」請回映其中的情緒。",
+        "reflection": [
+          "詞彙的強度是否貼近原話？",
+          "我是否把想法當成感受？"
+        ]
+      },
+      "related": [
+        "basic-basic-empathy",
+        "basic-paraphrase",
+        "strategy-empathy-not-agreement"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門",
+      "mlLens": "情緒詞與事件評價是不同訊息；辨識時仍需要脈絡與不確定性。"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "basic-concreteness",
+      "category": "basics",
+      "number": "01-10",
+      "order": 50,
+      "title": "具體化",
+      "summary": "把籠統困擾轉成能一起討論的片段，仍記得它對當事人的意義。",
+      "level": "入門",
+      "minutes": 3,
+      "tags": [
+        "具體化",
+        "釐清",
+        "具體目標"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能從模糊說法選出值得釐清的一點。",
+        "能把具體事件與當事人的感受連在一起。"
+      ],
+      "sections": [
+        {
+          "title": "這是什麼",
+          "paragraphs": [
+            "協助當事人把籠統的說法轉為可理解的具體情境、行為、感受或目標，讓雙方對重要內容有共同理解。"
+          ],
+          "items": []
+        },
+        {
+          "title": "什麼時候考慮",
+          "paragraphs": [
+            "當事人說「都一樣」「我很差」「我要改變」等，卻還不清楚具體指什麼；或準備把意願化為可行行動時。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼回應",
+          "paragraphs": [],
+          "items": [
+            "挑一個與當事人困擾有關的模糊重點。",
+            "邀請最近一次或最有代表性的例子，一次釐清一件事。",
+            "連結當時的感受與意義；若在規劃行動，再釐清何時、如何與所需資源。"
+          ]
+        },
+        {
+          "title": "容易混淆或誤用",
+          "paragraphs": [
+            "追問無關緊要的細節，使談話停滯；或只問人事時地物，忘了當事人的情緒與內在經驗。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。當事人尚未說明最近發生的事。",
+        "client": "最近不管做什麼都很糟。",
+        "lessHelpful": "你每天到底做了幾件事？列清楚。",
+        "response": "你說「都很糟」，可以選最近一件讓你有這種感覺的事，從那裡談起嗎？",
+        "explanation": "用有意義的例子建立共同理解，不急著查完所有細節。"
+      },
+      "practice": {
+        "prompt": "虛構練習：「我要變得更好。」請用一個問題釐清他想改變的具體面向。",
+        "reflection": [
+          "釐清的細節是否與當事人在意的事有關？",
+          "我有沒有忘記感受與意義，只追問事實？"
+        ]
+      },
+      "related": [
+        "basic-open-question",
+        "basic-empowerment",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型整理教材，新增虛構示例與自我練習。",
+      "articleType": "概念入門"
+    },
+    {
+      "schemaVersion": 1,
+      "category": "approaches",
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "articleType": "概念入門",
+      "aiCollaboration": "【跟生成式AI 協作完成的】查核官方來源、整理教材、反思問題與跨領域提醒。",
+      "id": "approach-person-centered",
+      "number": "02-01",
+      "order": 10,
+      "title": "個人中心：從關係理解一個人",
+      "summary": "認識人本取向中的個人中心，理解同理、真誠與自主步調如何連在一起。",
+      "tags": [
+        "人本",
+        "個人中心",
+        "治療關係"
+      ],
+      "learningGoals": [
+        "說明個人中心的核心態度。",
+        "辨認關係條件與單項技巧的差異。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "個人中心（Person-Centred Approach）是人本取向的一支。Rogers 認為，能被理解與尊重的關係，有助當事人接近自身經驗，逐漸看見需求與選擇。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [
+            "治療者留意對方如何經驗眼前的困難，嘗試傳達理解並接受修正。探索方向與速度尊重當事人，避免急著替他決定什麼才是正確答案。同一種回應是否合宜，仍須放回當事人的經驗及關係脈絡。"
+          ],
+          "items": []
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [],
+          "items": [
+            "真誠一致：覺察自己的經驗，以真實而適切的方式參與關係。",
+            "同理理解：從對方的觀點理解其世界。",
+            "無條件積極關注：重視人的價值與尊嚴。"
+          ]
+        },
+        {
+          "title": "與其他取向的差異",
+          "paragraphs": [
+            "相較 CBT 常見的共同議程與行動練習，個人中心更突出當事人的自主步調與當下經驗。兩者都重視合作關係。"
+          ],
+          "items": []
+        },
+        {
+          "title": "學習界線",
+          "paragraphs": [
+            "人本涵蓋多種取向，不能全部當作個人中心。核心態度也須被當事人感受到；背熟同理句型，仍不足以判斷關係是否有幫助。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "如果當事人說「你好像沒有懂我」，你會如何繼續理解，而不急著證明自己很同理？",
+        "reflection": [
+          "你的下一步是否讓對方能修正你的理解？"
+        ]
+      },
+      "mlLens": "單句中出現情緒詞，不代表同理已被接收。判讀關係需要前後脈絡及當事人的回饋，文字分類只能提供有限線索。",
+      "related": [
+        "basic-basic-empathy",
+        "basic-open-question",
+        "approach-cbt"
+      ],
+      "sources": [
+        {
+          "title": "The Person Centred Association｜What is the Person-Centred Approach?",
+          "url": "https://www.the-pca.org.uk/about/what-is-it.html",
+          "kind": "專業組織入門資料",
+          "date": ""
+        },
+        {
+          "title": "BACP｜What is person-centred counselling?",
+          "url": "https://www.bacp.co.uk/about-therapy/types-of-therapy/person-centred-counselling/",
+          "kind": "專業組織入門資料",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "category": "approaches",
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "articleType": "概念入門",
+      "aiCollaboration": "【跟生成式AI 協作完成的】查核官方來源、整理教材、反思問題與跨領域提醒。",
+      "id": "approach-cbt",
+      "number": "02-02",
+      "order": 20,
+      "title": "CBT：一起檢視想法與行動",
+      "summary": "從個別化理解出發，認識認知行為治療如何結合合作探索與生活中的練習。",
+      "tags": [
+        "CBT",
+        "認知行為",
+        "合作探索"
+      ],
+      "learningGoals": [
+        "說明想法、感受與行為的互動。",
+        "理解個別化概念化與行動練習的用途。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "認知行為治療（Cognitive Behavior Therapy，CBT）關注想法、情緒、行為與情境如何互相影響。理解困擾時，也會考慮成長經驗與社會環境。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [
+            "治療者與當事人共同設定目標，探索哪些因素維持困難，再安排合適的練習。會談重點與會談外的行動計畫可以調整，並透過回顧進展修正理解。練習結果也可用來重新理解原先的假設，而非只判定作業有無完成。"
+          ],
+          "items": []
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [],
+          "items": [
+            "認知概念化：形成持續更新的個別理解。",
+            "合作式實證：一起蒐集證據、檢驗假設。",
+            "行動練習：在生活中嘗試並觀察結果。"
+          ]
+        },
+        {
+          "title": "與其他取向的差異",
+          "paragraphs": [
+            "SFBT 特別聚焦偏好未來與例外；CBT 常以個別化概念化安排認知和行為介入。兩者的合作與目標討論仍有重疊。"
+          ],
+          "items": []
+        },
+        {
+          "title": "學習界線",
+          "paragraphs": [
+            "不要把 CBT 縮成勸人正面思考。想法可能反映真實困境，需要理解其處境、建立合作關係，並依文化與需求選擇方法。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "當事人說「我一定會失敗」，開始檢視想法之前，你還想了解哪些情境與經驗？",
+        "reflection": [
+          "你是否已先認定他的想法不合理？"
+        ]
+      },
+      "mlLens": "個案概念化是一組可修正的假設。模型辨識出負向語句，無法直接證明其不合理，也不能據此推論困擾的原因。",
+      "related": [
+        "approach-sfbt",
+        "approach-act",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "Beck Institute｜Understanding CBT",
+          "url": "https://beckinstitute.org/about/understanding-cbt/",
+          "kind": "專業組織入門資料",
+          "date": ""
+        },
+        {
+          "title": "ABCT｜What to Expect from Cognitive Behavioral Therapies",
+          "url": "https://www.abct.org/get-help/what-to-expect-from-cognitive-behavioral-therapies/",
+          "kind": "專業組織入門資料",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "category": "approaches",
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "articleType": "概念入門",
+      "aiCollaboration": "【跟生成式AI 協作完成的】查核官方來源、整理教材、反思問題與跨領域提醒。",
+      "id": "approach-psychodynamic",
+      "number": "02-03",
+      "order": 30,
+      "title": "心理動力：理解反覆出現的經驗",
+      "summary": "留意情緒、內在衝突與關係模式，連結過去經驗和此刻的互動。",
+      "tags": [
+        "心理動力",
+        "關係模式",
+        "內在衝突"
+      ],
+      "learningGoals": [
+        "辨認心理動力的主要工作焦點。",
+        "分辨探索性的理解與過早下結論。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "心理動力治療（Psychodynamic Psychotherapy）關注不易被察覺的感受、內在衝突與反覆出現的關係模式。增加自我理解，有助當事人看見原本難以辨認的選擇。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [
+            "治療者探索當下生活、過去重要經驗與治療關係之間的連結。例如同一種擔心如何在不同關係中出現，以及哪些情緒很難被說出來；理解需隨對話逐步形成。"
+          ],
+          "items": []
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [],
+          "items": [
+            "無意識歷程：尚未清楚覺察的心理活動。",
+            "防衛：影響情緒接觸與自我保護的方式。",
+            "治療關係：觀察感受與互動的重要脈絡。"
+          ]
+        },
+        {
+          "title": "與其他取向的差異",
+          "paragraphs": [
+            "心理動力特別關心情緒衝突與關係經驗的意義；CBT 常更明確安排認知與行為練習。這是工作重心的差異，不能據此把治療者分成只談過去或只談現在。"
+          ],
+          "items": []
+        },
+        {
+          "title": "學習界線",
+          "paragraphs": [
+            "此取向包含不同理論與治療形式。避免把所有困難歸因於童年，也不要將一次沉默直接解讀成某個固定的潛意識意義。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "看到當事人突然沉默，你可以先觀察什麼，讓後續理解保留不同可能？",
+        "reflection": [
+          "哪些是已觀察到的事實，哪些仍是你的猜測？"
+        ]
+      },
+      "mlLens": "無意識衝突不是可從單句直接讀出的真實標籤。分析逐字稿時，應區分可觀察互動與理論詮釋，保留多種解釋。",
+      "related": [
+        "approach-person-centered",
+        "approach-cbt",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "American Psychoanalytic Association｜What is Psychoanalytic or Psychodynamic Psychotherapy?",
+          "url": "https://apsa.org/about-psychoanalysis/psychoanalytic-psychotherapy/",
+          "kind": "專業組織入門資料",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "category": "approaches",
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "articleType": "概念入門",
+      "aiCollaboration": "【跟生成式AI 協作完成的】查核官方來源、整理教材、反思問題與跨領域提醒。",
+      "id": "approach-sfbt",
+      "number": "02-04",
+      "order": 40,
+      "title": "SFBT：找到已經出現的小改變",
+      "summary": "從偏好的未來、既有資源與成功經驗，理解焦點解決如何共同建立下一步。",
+      "tags": [
+        "SFBT",
+        "焦點解決",
+        "例外",
+        "目標"
+      ],
+      "learningGoals": [
+        "說明偏好未來與例外的用途。",
+        "理解量尺追問如何連結具體行動。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "焦點解決短期治療（Solution-Focused Brief Therapy，SFBT）從當事人希望生活有哪些改變出發，探索已發生的成功、例外與資源，逐步擴大有用的小改變。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [
+            "治療者使用當事人的語言，共同描繪偏好的未來：改變後會做什麼、如何互動、誰會注意到。也關心問題較輕的時候，以及當時有哪些條件與行動。"
+          ],
+          "items": []
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [],
+          "items": [
+            "偏好未來：把期待描述成可觀察的生活差異。",
+            "例外：問題未出現或較不嚴重的時刻。",
+            "量尺：探索目前進展與下一步的對話工具。"
+          ]
+        },
+        {
+          "title": "與其他取向的差異",
+          "paragraphs": [
+            "相較以困難的形成與維持機制安排介入，SFBT 更突出當事人想要的方向及已有的成功。工作仍需理解並承接當事人的痛苦。"
+          ],
+          "items": []
+        },
+        {
+          "title": "學習界線",
+          "paragraphs": [
+            "奇蹟問句與量尺需要依回應持續追問，不能當作固定問卷。短期代表重視精簡且有用的工作，並非保證所有人都在固定次數內完成治療。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "當事人說「這週稍微好一點」，你想追問哪個具體細節，以理解這個改變如何發生？",
+        "reflection": [
+          "問題是否連著對方的用語，而非套上你預設的答案？"
+        ]
+      },
+      "mlLens": "會談中的自評量尺可協助表達經驗，但分數上升不自動證明介入造成效果。使用者對分數的理解與情境也可能改變。",
+      "related": [
+        "basic-open-question",
+        "approach-cbt",
+        "strategy-levels"
+      ],
+      "sources": [
+        {
+          "title": "SFBTA｜SFBT Treatment Manuals（含2025年第3版）",
+          "url": "https://www.sfbta.org/Resources/sfbt-treatment-manuals",
+          "kind": "官方訓練教材入口",
+          "date": ""
+        },
+        {
+          "title": "SFBTA Research Committee｜Solution Focused Brief Therapy Treatment Manual for Working with Individuals, 3rd ed.",
+          "url": "https://www.sfbta.org/Solution%20Focused%20Therapy%20Treatment%20Manual%20for%20Working%20with%20Individuals%20-3rd%20Edition-%20final.pdf",
+          "kind": "原始訓練手冊",
+          "date": "2025"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "category": "approaches",
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "articleType": "概念入門",
+      "aiCollaboration": "【跟生成式AI 協作完成的】查核官方來源、整理教材、反思問題與跨領域提醒。",
+      "id": "approach-act",
+      "number": "02-05",
+      "order": 50,
+      "title": "ACT：帶著經驗朝重視的方向走",
+      "summary": "認識心理彈性，理解接納、價值與行動如何彼此支持。",
+      "tags": [
+        "ACT",
+        "心理彈性",
+        "價值",
+        "接納"
+      ],
+      "learningGoals": [
+        "說明心理彈性與價值方向。",
+        "辨認接納、念頭與具體行動的關係。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "接納與承諾治療（Acceptance and Commitment Therapy，ACT）以心理彈性為核心：覺察當下經驗，依情境選擇持續或改變行動，朝自己重視的方向前進。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [
+            "治療者關心當事人如何與念頭、感受相處，以及目前的應對是否有助於重視的生活。探索價值後，會連結可實行的步驟，並留意行動中遇到的內在阻礙。"
+          ],
+          "items": []
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [],
+          "items": [
+            "接納與認知解離：開放接觸經驗，調整與念頭的關係。",
+            "當下覺察與脈絡自我：觀察此刻的經驗，不把某個念頭或感受當成完整的自己。",
+            "價值與承諾行動：釐清持續方向，實踐具體步驟。"
+          ]
+        },
+        {
+          "title": "與其他取向的差異",
+          "paragraphs": [
+            "ACT 通常被歸入第三波認知行為治療。相較著重檢視想法內容的工作，ACT 更突出念頭在特定情境中如何影響行動；這是重心差異，不是互不相容的分類。"
+          ],
+          "items": []
+        },
+        {
+          "title": "學習界線",
+          "paragraphs": [
+            "六個歷程相互支持，沒有必須照表完成的固定順序。接納內在經驗也不表示被動忍受有害處境；具體行動與價值仍需被看見。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "若當事人想「完全不焦慮才開始行動」，你會想了解他重視什麼，以及焦慮如何影響目前的選擇？",
+        "reflection": [
+          "你的理解是否同時容納他的感受與想要的生活方向？"
+        ]
+      },
+      "mlLens": "負向情緒詞多，不代表心理彈性低。理解 ACT 相關歷程需要觀看念頭的功能、情境與行動，不能只對語句做正負分類。",
+      "related": [
+        "approach-cbt",
+        "approach-person-centered",
+        "strategy-levels"
+      ],
+      "sources": [
+        {
+          "title": "ACBS｜The Six Core Processes of ACT",
+          "url": "https://contextualscience.org/six_core_processes_act",
+          "kind": "學派專業組織理論說明",
+          "date": ""
+        },
+        {
+          "title": "ACBS｜Hayes（2004）：ACT 與第三波行為及認知治療",
+          "url": "https://contextualscience.org/publications/acceptance_and_commitment_therapy_relational_frame_theory_and_the_third_wav",
+          "kind": "學派專業組織文獻資料",
+          "date": "2004"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "aiCollaboration": "【跟生成式AI 協作完成的】官方資料查核、教材摘要、虛構練習與跨領域閱讀提醒。",
+      "id": "approach-aedp",
+      "category": "approaches",
+      "number": "02-06",
+      "order": 60,
+      "title": "AEDP：在安全關係中探索情緒",
+      "summary": "理解 AEDP 的情緒與關係焦點，也釐清現行名稱和「加速」容易帶來的誤解。",
+      "articleType": "概念入門",
+      "tags": [
+        "AEDP",
+        "情緒經驗",
+        "治療關係"
+      ],
+      "learningGoals": [
+        "說明 AEDP 如何結合關係與情緒經驗。",
+        "辨認現行名稱、歷史名稱與學習界線。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "AEDP Psychotherapy 由 Diana Fosha 發展。它重視安全、投入的治療關係，協助來談者接近原本難以獨自面對的情緒經驗。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [],
+          "items": [
+            "觀察當下情緒、身體感受與互動。",
+            "留意來談者是否感到被理解、能承受目前的步調。",
+            "探索困難之外，也關注獲得支持與改變時的感受。"
+          ]
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [
+            "「共同調節」指關係中的支持有助於面對情緒；探索治療經驗則會關注被陪伴、被理解的感受與意義。"
+          ],
+          "items": []
+        },
+        {
+          "title": "與其他取向的差異",
+          "paragraphs": [
+            "AEDP 將關係經驗與情緒處理緊密連結。它與兩個 EFT 都重視情緒，但理論與訓練體系各有脈絡，不能只憑一句同理回應辨認學派。"
+          ],
+          "items": []
+        },
+        {
+          "title": "名稱與學習界線",
+          "paragraphs": [
+            "原名 Accelerated Experiential Dynamic Psychotherapy 常譯為「加速體驗動力心理治療」；官方現稱 AEDP Psychotherapy。「加速」不保證快速療效，深入工作仍需專業訓練、督導與風險評估。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "虛構練習：對方說「有人陪我說這件事，好像比較不孤單」。你會留意哪些線索？",
+        "reflection": [
+          "哪些內容是對方說出的，哪些只是我的推測？",
+          "能否先理解這份被陪伴的經驗，而不急著深化情緒？"
+        ]
+      },
+      "mlLens": "情緒類別與治療歷程是不同層次。文字出現「安心」不代表已完成情緒轉化，也不能單靠模型標籤判斷治療品質。",
+      "related": [
+        "approach-emotion-focused",
+        "approach-emotionally-focused",
+        "basic-basic-empathy"
+      ],
+      "sources": [
+        {
+          "title": "AEDP Institute｜AEDP Psychotherapy",
+          "url": "https://aedpinstitute.org/about-aedp-psychotherapy/",
+          "kind": "官方資料",
+          "date": ""
+        },
+        {
+          "title": "AEDP Institute｜Glossary",
+          "url": "https://aedpinstitute.org/glossary/",
+          "kind": "官方資料",
+          "date": ""
+        },
+        {
+          "title": "AEDP Institute｜FAQ：現行名稱與訓練",
+          "url": "https://aedpinstitute.org/faq/",
+          "kind": "官方資料",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "aiCollaboration": "【跟生成式AI 協作完成的】官方資料查核、教材摘要、虛構練習與跨領域閱讀提醒。",
+      "id": "approach-emotion-focused",
+      "category": "approaches",
+      "number": "02-07",
+      "order": 70,
+      "title": "情緒焦點治療：Greenberg 取向",
+      "summary": "以情緒的功能與轉化理解 Emotion-Focused Therapy，並與 Johnson 的 EFT 分清脈絡。",
+      "articleType": "概念入門",
+      "tags": [
+        "Emotion-Focused Therapy",
+        "Greenberg",
+        "isEFT",
+        "EFT"
+      ],
+      "learningGoals": [
+        "說明情緒焦點治療的核心學習重點。",
+        "區分兩個 EFT，避免把情緒工作等同宣洩。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "Emotion-Focused Therapy（Greenberg／isEFT）重視情緒提供的需要與行動資訊，並結合同理關係、經驗探索與意義建構。本網站稱它「情緒焦點治療」。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [],
+          "items": [
+            "跟隨來談者的實際體驗，也適度引導。",
+            "協助辨認、接納、調節與理解情緒。",
+            "探索新的情緒經驗如何帶來不同的理解與回應。"
+          ]
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [
+            "「歷程標記」是提示工作方向的對話線索。兩椅、空椅等工作以不同內在立場或關係角色展開對話，協助探索經驗；運用時需要訓練與判斷，並非通用腳本。"
+          ],
+          "items": []
+        },
+        {
+          "title": "與另一個 EFT 的差異",
+          "paragraphs": [
+            "Johnson／ICEEFT 的 Emotionally Focused Therapy 以依附與連結為核心。兩者有共同發展淵源，但不能只按「個人／伴侶」區分；閱讀時應核對英文全名及訓練體系。"
+          ],
+          "items": []
+        },
+        {
+          "title": "誤解與學習界線",
+          "paragraphs": [
+            "情緒工作包含調節與轉化，不等於盡情宣洩。初學者可練習辨認線索；深入情緒與椅子工作須有專業訓練和督導。網站閱讀不等同取得認證。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "虛構練習：對方說「我很氣，但我其實希望他把我的話聽完」。請分開記下情緒與需要。",
+        "reflection": [
+          "是否保留對方修正我理解的空間？",
+          "我有沒有把強烈情緒直接當成進步？"
+        ]
+      },
+      "mlLens": "情緒詞不等於情緒功能。分類模型找到「憤怒」，仍不足以判斷它在此情境的意義，或決定適合哪一種介入。",
+      "related": [
+        "approach-emotionally-focused",
+        "approach-person-centered",
+        "basic-feeling-reflection"
+      ],
+      "sources": [
+        {
+          "title": "isEFT｜What Is Emotion Focused Therapy?",
+          "url": "https://iseft.org/What-is-EFT",
+          "kind": "官方資料",
+          "date": ""
+        },
+        {
+          "title": "isEFT｜Standards EFT for Individuals",
+          "url": "https://iseft.org/page-18299",
+          "kind": "官方資料",
+          "date": ""
+        },
+        {
+          "title": "isEFT｜Our Mission：發展淵源",
+          "url": "https://www.iseft.org/about-us",
+          "kind": "官方資料",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "aiCollaboration": "【跟生成式AI 協作完成的】官方資料查核、教材摘要、虛構練習與跨領域閱讀提醒。",
+      "id": "approach-emotionally-focused",
+      "category": "approaches",
+      "number": "02-08",
+      "order": 80,
+      "title": "情緒取向治療：Johnson／ICEEFT",
+      "summary": "從依附需要與互動循環認識 Emotionally Focused Therapy，理解個人、伴侶及家庭應用。",
+      "articleType": "概念入門",
+      "tags": [
+        "Emotionally Focused Therapy",
+        "Johnson",
+        "ICEEFT",
+        "依附"
+      ],
+      "learningGoals": [
+        "用依附與互動脈絡理解此取向。",
+        "辨認 EFIT、EFCT、EFFT 與另一個 EFT 的差異。"
+      ],
+      "sections": [
+        {
+          "title": "核心觀點",
+          "paragraphs": [
+            "Emotionally Focused Therapy（Johnson／ICEEFT）以依附理論為核心，關注人在感到威脅時，如何與自己及重要他人建立安全連結。本網站稱它「情緒取向治療」。"
+          ],
+          "items": []
+        },
+        {
+          "title": "工作焦點",
+          "paragraphs": [],
+          "items": [
+            "探索脆弱感受與依附需要。",
+            "辨認情緒、保護策略與回應如何形成反覆循環。",
+            "在安全的關係中形成新的表達與回應經驗。"
+          ]
+        },
+        {
+          "title": "常見概念",
+          "paragraphs": [
+            "以伴侶工作為例，重點是看懂雙方如何互相影響，避免只追究誰有錯。需要被理解，不代表任何傷害行為都能被合理化。"
+          ],
+          "items": []
+        },
+        {
+          "title": "與其他取向的差異",
+          "paragraphs": [
+            "它不同於 Greenberg 的 Emotion-Focused Therapy，也不限於伴侶：ICEEFT 分別提供個人 EFIT、伴侶 EFCT 與家庭 EFFT 的訓練和認證。"
+          ],
+          "items": []
+        },
+        {
+          "title": "學習界線",
+          "paragraphs": [
+            "虛構案例適合練習描繪循環，不能據此判定真實關係。實際工作須依服務對象接受訓練與督導，評估風險和情境，再決定適合的介入。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "虛構練習：甲怕被忽略而追問，乙感到壓力而退開。請描述這個循環，並標出仍未知的資訊。",
+        "reflection": [
+          "描述是否避免替任何一方診斷？",
+          "循環之外，還有哪些關係與安全情境需要了解？"
+        ]
+      },
+      "mlLens": "互動循環需要跨回合脈絡。「追問」「退開」是待確認的描述，不能直接當成固定人格標籤或由單句推斷依附類型。",
+      "related": [
+        "approach-emotion-focused",
+        "basic-basic-empathy",
+        "strategy-levels"
+      ],
+      "sources": [
+        {
+          "title": "ICEEFT｜What is EFT?",
+          "url": "https://iceeft.com/what-is-eft/",
+          "kind": "官方資料",
+          "date": ""
+        },
+        {
+          "title": "ICEEFT｜EFT Certification",
+          "url": "https://iceeft.com/eft-certification/",
+          "kind": "官方資料",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "strategy-first-understand",
+      "category": "strategies",
+      "number": "03-01",
+      "order": 10,
+      "title": "先理解，再探問",
+      "summary": "把承接與探索接在一起，也練習判斷什麼時候可以先不問。",
+      "level": "入門",
+      "minutes": 4,
+      "tags": [
+        "回應順序",
+        "承接",
+        "探問"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能依當下需要安排承接與提問。",
+        "能提出一種不必立刻追問的回應。"
+      ],
+      "sections": [
+        {
+          "title": "這次想練什麼",
+          "paragraphs": [
+            "這份教學整理把一次回應看成小範圍的選擇：先讓對方知道你聽見什麼，再判斷是否需要追問。目標是貼近眼前需要，沒有固定的句型順序。"
+          ],
+          "items": []
+        },
+        {
+          "title": "兩種可以考慮的做法",
+          "paragraphs": [],
+          "items": [
+            "困擾與感受已明確時，可以先用初層次同理或重述承接，再以一個開放式問句邀請探索。",
+            "對方想繼續說時，也可以只重述後停一下；沒有必要每句都加問號。"
+          ]
+        },
+        {
+          "title": "還不知道的部分",
+          "paragraphs": [
+            "只知道「我不想去上課」，仍不清楚原因與期待。先邀請說明，不急著分析家庭關係或給出解決辦法。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。學生談課業壓力。",
+        "client": "我每天都很累，作業卻一直做不完。",
+        "lessHelpful": "你怎麼不早點開始？",
+        "response": "你每天已經很累，還有做不完的作業。最近哪一部分最讓你吃力？",
+        "explanation": "先重述，再聚焦一個開放問題；也可以先停在重述。"
+      },
+      "practice": {
+        "prompt": "把「你就排個時間表」改成先承接、再邀請探索的回應。",
+        "reflection": [
+          "問題是否來自對方原話？",
+          "不提問是否也能支持他繼續說？"
+        ]
+      },
+      "related": [
+        "basic-basic-empathy",
+        "basic-open-question",
+        "basic-paraphrase"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型與基本推理進行本網站教學整理；示例及練習為原創虛構。",
+      "articleType": "教學整理"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "strategy-levels",
+      "category": "strategies",
+      "number": "03-02",
+      "order": 20,
+      "title": "技巧、策略與學派有什麼不同？",
+      "summary": "分清一次回應、當次安排與整體理解觀點，避免用一句話替整段工作貼標籤。",
+      "level": "入門",
+      "minutes": 4,
+      "tags": [
+        "概念層次",
+        "技巧",
+        "策略"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能用自己的話區分三個層次。",
+        "能說明一句回應不足以判定整個學派。"
+      ],
+      "sections": [
+        {
+          "title": "三個閱讀層次",
+          "paragraphs": [
+            "在本網站，學派指理解困擾與改變的整體觀點；技巧是一次回應的具體做法；策略是在情境中安排目標與技巧的選擇。這是閱讀上的分層，不是互斥標籤。"
+          ],
+          "items": []
+        },
+        {
+          "title": "把目標與做法放在一起",
+          "paragraphs": [
+            "面對拒絕邀請的猶豫，重述與探問是可選技巧；先理解擔心、再討論選擇，是一種策略。不能只憑一句問話，就判定整段工作屬於哪個學派。"
+          ],
+          "items": []
+        },
+        {
+          "title": "另一種安排",
+          "paragraphs": [
+            "若當事人想先釐清如何開口，也可聚焦具體情境。仍需確認他的目標與已有理解，沒有一種順序適合所有時刻。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。當事人猶豫是否接受邀請。",
+        "client": "我不想去，也怕拒絕會傷感情。",
+        "lessHelpful": "你直接說不就好了，還需要想什麼？",
+        "response": "你想拒絕，也在意關係。你希望先談這份擔心，還是看看怎麼開口？",
+        "explanation": "回應結合重述與探問；策略是先共同決定焦點。"
+      },
+      "practice": {
+        "prompt": "選一句熟悉的回應，分別寫下使用的技巧、當次目標，以及仍缺哪些情境資訊。",
+        "reflection": [
+          "有把單一句型當成整個學派嗎？",
+          "策略是否連結了目標與情境？"
+        ]
+      },
+      "related": [
+        "basic-open-question",
+        "basic-concreteness",
+        "strategy-first-understand"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型與基本推理進行本網站教學整理；示例及練習為原創虛構。",
+      "articleType": "教學整理"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "strategy-empathy-not-agreement",
+      "category": "strategies",
+      "number": "03-03",
+      "order": 30,
+      "title": "同理不等於認同",
+      "summary": "理解當事人的感受，同時讓事件判斷與他人動機保留釐清的空間。",
+      "level": "入門",
+      "minutes": 4,
+      "tags": [
+        "同理",
+        "情緒與判斷",
+        "釐清"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能分開感受與對他人動機的推測。",
+        "能寫出承接情緒而不替指控背書的回應。"
+      ],
+      "sections": [
+        {
+          "title": "分開感受與判斷",
+          "paragraphs": [
+            "同理可以回應當事人的難受，同時把他對他人動機的推測留待釐清。說出「你很委屈」，不等於確認「對方就是故意傷害你」。這份整理練習保留兩者的區分。"
+          ],
+          "items": []
+        },
+        {
+          "title": "可以怎麼選擇",
+          "paragraphs": [],
+          "items": [
+            "感受明確時，可先以情感反應或初層次同理承接。",
+            "事件模糊時，可邀請一個具體片段；不必立刻同意或反駁結論。"
+          ]
+        },
+        {
+          "title": "另一種做法與未知",
+          "paragraphs": [
+            "對方若不認同你的情緒詞，就回到他的說法重新確認。幾句話不足以知道另一個人的意圖，不能用「我只是同理」略過不確定性。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。同學未回訊息，原因尚未知。",
+        "client": "他都不回我，根本就是看不起我，想到就很難受。",
+        "lessHelpful": "對，他就是不尊重你。",
+        "response": "等不到回覆讓你很難受，也懷疑自己不被重視。你願意說說這次發生了什麼嗎？",
+        "explanation": "承接難受與當事人的理解，沒有替朋友的意圖作證。"
+      },
+      "practice": {
+        "prompt": "回應「老師故意刁難我，我真的很生氣」，把情緒與動機推測分開。",
+        "reflection": [
+          "我承接的是感受，還是替指控背書？",
+          "哪些部分仍需要釐清？"
+        ]
+      },
+      "related": [
+        "basic-basic-empathy",
+        "basic-feeling-reflection",
+        "strategy-uncertainty"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型與基本推理進行本網站教學整理；示例及練習為原創虛構。",
+      "articleType": "教學整理"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "strategy-uncertainty",
+      "category": "strategies",
+      "number": "03-04",
+      "order": 40,
+      "title": "資訊不足時如何回應",
+      "summary": "保留不知道的部分，先核對或釐清，不用猜測把故事補完整。",
+      "level": "入門",
+      "minutes": 4,
+      "tags": [
+        "資訊不足",
+        "不確定性",
+        "核對理解"
+      ],
+      "updated": "2026-11-16",
+      "learningGoals": [
+        "能把已知、推測與待確認事項分開。",
+        "能在少量資訊下選擇保守的回應。"
+      ],
+      "sections": [
+        {
+          "title": "先分清三件事",
+          "paragraphs": [],
+          "items": [
+            "已知線索：當事人說出的事件、感受與期待。",
+            "暫時推測：可能的理解，尚未獲得確認。",
+            "待確認事項：會影響這次回應目的的缺漏資訊。"
+          ]
+        },
+        {
+          "title": "兩條保守路徑",
+          "paragraphs": [
+            "可以用重述核對已知內容，或以探問、具體化邀請補充。一句「我很差」不足以判定人格、診斷或完整諮商階段。"
+          ],
+          "items": []
+        },
+        {
+          "title": "另一種做法",
+          "paragraphs": [
+            "對方若暫時不願多談，可以承認理解有限，讓他決定想先說什麼。加上「可能」不會讓沒有線索的推測變得可靠。"
+          ],
+          "items": []
+        }
+      ],
+      "example": {
+        "context": "原創虛構練習。只收到一句沒有前文的表達。",
+        "client": "反正我就是做不好。",
+        "lessHelpful": "你一定從小就沒有被肯定。",
+        "response": "你說「做不好」，現在最想讓我理解的是哪件事？",
+        "explanation": "先邀請具體脈絡，不用猜測補完背景。"
+      },
+      "practice": {
+        "prompt": "對「我又失敗了」，先寫一項已知、一項仍未知，再試寫一句回應。",
+        "reflection": [
+          "推測是否有原文根據？",
+          "對方能否修正我的理解或選擇不回答？"
+        ]
+      },
+      "related": [
+        "basic-paraphrase",
+        "basic-concreteness",
+        "basic-deep-empathy"
+      ],
+      "sources": [
+        {
+          "title": "使用者提供的課程網站原型",
+          "url": "https://jing-han-chen.github.io/Interactive_Counseling_Training-/",
+          "kind": "課程原型",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】依課程原型與基本推理進行本網站教學整理；示例及練習為原創虛構。",
+      "articleType": "教學整理",
+      "mlLens": "「資訊不足」也值得保留為結果，不必為每段文字強迫指定心理狀態。"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "update-ai-boundaries",
+      "category": "updates",
+      "number": "04-01",
+      "order": 10,
+      "title": "AI 心理支持工具的界線：APA 健康建議導讀",
+      "summary": "閱讀 APA 於2025年發布的健康建議，練習區分工具用途、研究證據與專業照護。",
+      "level": "入門",
+      "minutes": 4,
+      "tags": [
+        "AI",
+        "心理支持",
+        "健康建議",
+        "實證判讀"
+      ],
+      "published": "2025-11-13",
+      "updated": "2026-11-16",
+      "articleType": "專業健康建議導讀",
+      "learningGoals": [
+        "辨認專業建議與臨床試驗的差別。",
+        "提出評估 AI 心理支持工具的問題。"
+      ],
+      "sections": [
+        {
+          "title": "來源日期與資料類型",
+          "paragraphs": [
+            "美國心理學會（American Psychological Association，APA）於2025年11月13日發布新聞稿，介紹生成式 AI 聊天機器人與心理健康應用程式的健康建議。本文是專業健康建議導讀，並非即時新聞或單一臨床試驗報告。"
+          ],
+          "items": []
+        },
+        {
+          "title": "這份建議關注什麼",
+          "paragraphs": [
+            "建議聚焦消費者用於心理支持的一般用途生成式 AI 與健康應用，提醒開發與普及速度可能超過安全性、有效性和監督證據的累積。"
+          ],
+          "items": []
+        },
+        {
+          "title": "三個閱讀重點",
+          "paragraphs": [],
+          "items": [
+            "用途與證據：區分陪伴、資訊提供與治療宣稱。",
+            "關係與依賴：留意擬人化互動及脆弱族群的需要。",
+            "資料與隱私：檢查資料如何使用，以及是否有適當監督。"
+          ]
+        },
+        {
+          "title": "如何理解其限制",
+          "paragraphs": [
+            "這是依發布當時資料提出的專業建議，無法直接證明每個 AI 工具均有效或無效，也未驗證本網站的學習效果。評估仍須確認具體工具、使用對象與研究設計。"
+          ],
+          "items": []
+        },
+        {
+          "title": "對學習者的意義",
+          "paragraphs": [
+            "閱讀展示成果時，可追問量測的是文字品質、使用感受，還是臨床結果。學會辨識偏誤與資訊限制，有助於把 AI 素養納入諮商學習。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "看到「AI 回應很有同理心」的研究或展示時，你還需要哪些資料，才有理由判斷它適合用在哪種情境？",
+        "reflection": [
+          "你是否分開考慮回應品質、臨床效果與安全性？"
+        ]
+      },
+      "mlLens": "文字同理評分、使用滿意度與臨床改善是不同結果變項。離線測試表現不能直接推成實際照護的有效性與安全性。",
+      "related": [
+        "strategy-uncertainty",
+        "strategy-levels",
+        "approach-person-centered"
+      ],
+      "sources": [
+        {
+          "title": "APA｜Artificial intelligence, wellness apps alone cannot solve mental health crisis",
+          "url": "https://www.apa.org/news/press/releases/2025/11/ai-wellness-apps-mental-health",
+          "kind": "官方新聞稿",
+          "date": "2025-11-13"
+        },
+        {
+          "title": "APA｜Health advisory: Use of generative AI chatbots and wellness applications for mental health",
+          "url": "https://www.apa.org/topics/artificial-intelligence-machine-learning/health-advisory-chatbots-wellness-apps",
+          "kind": "專業健康建議書",
+          "date": ""
+        }
+      ],
+      "aiCollaboration": "【跟生成式AI 協作完成的】來源查核、健康建議摘要、研究判讀與反思問題整理。"
+    },
+    {
+      "schemaVersion": 1,
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "aiCollaboration": "【跟生成式AI 協作完成的】官方資料查核、教材摘要、虛構練習與跨領域閱讀提醒。",
+      "id": "update-aedp-positive-emotions",
+      "category": "updates",
+      "number": "04-02",
+      "order": 20,
+      "title": "AEDP 研究導讀：正向情緒與改變歷程",
+      "summary": "從一項自然情境研究，練習分辨情緒、後續功能與因果結論的距離。",
+      "articleType": "研究導讀",
+      "published": "2025-07-28",
+      "tags": [
+        "研究導讀",
+        "AEDP",
+        "正向情緒",
+        "研究方法"
+      ],
+      "learningGoals": [
+        "辨認自然情境研究能支持的結論。",
+        "區分時間先後、預測與因果。"
+      ],
+      "sections": [
+        {
+          "title": "來源日期與資料類型",
+          "paragraphs": [
+            "Gross、Bar-Kalifa 與 Shahar 的研究於2025年7月28日首次線上發表，編入2026年卷期。本篇依原始研究摘要整理，屬研究導讀。"
+          ],
+          "items": []
+        },
+        {
+          "title": "研究怎麼做",
+          "paragraphs": [
+            "46位來談者接受16次 AEDP，每次會談後回報情緒、會談品質及近期功能。研究也收集治療前後與6個月追蹤資料。"
+          ],
+          "items": []
+        },
+        {
+          "title": "主要發現",
+          "paragraphs": [
+            "正向情緒與較佳會談結果、次週功能相關，也預測部分治療後的憂鬱與人際功能改善；後兩項關聯在6個月追蹤未達顯著。"
+          ],
+          "items": []
+        },
+        {
+          "title": "如何理解限制",
+          "paragraphs": [
+            "這是自然情境觀察，並非不同療法的隨機比較。統計預測不等於證明正向情緒造成改善，也不能據此宣稱 AEDP 優於其他學派。"
+          ],
+          "items": []
+        },
+        {
+          "title": "對學習者的意義",
+          "paragraphs": [
+            "閱讀會談時可留意支持、感激或舒展等經驗，並保留其個別意義。不要把「多說正向的話」直接當成研究已驗證的操作程序。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "把「正向情緒讓治療更有效」改寫成符合這項研究設計的一句話。",
+        "reflection": [
+          "有沒有交代這是相關結果？",
+          "是否保留追蹤結果與比較條件的限制？"
+        ]
+      },
+      "mlLens": "交叉延宕模型能檢視先後關聯，但仍可能受到未測量因素影響。對後續狀態有預測力，不等於介入該變項就能產生同樣效果。",
+      "related": [
+        "approach-aedp",
+        "approach-emotion-focused"
+      ],
+      "sources": [
+        {
+          "title": "Gross et al.｜原始研究摘要與出版日期（PubMed）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40726109/",
+          "kind": "原始研究摘要",
+          "date": "2025-07-28"
+        },
+        {
+          "title": "Hebrew University｜作者機構典藏之研究摘要",
+          "url": "https://cris.huji.ac.il/en/publications/the-role-of-positive-emotions-in-accelerated-experiential-dynamic/",
+          "kind": "研究機構典藏",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "level": "入門",
+      "minutes": 4,
+      "updated": "2026-11-16",
+      "aiCollaboration": "【跟生成式AI 協作完成的】官方資料查核、教材摘要、虛構練習與跨領域閱讀提醒。",
+      "id": "update-efit-randomized-trial",
+      "category": "updates",
+      "number": "04-03",
+      "order": 30,
+      "title": "EFIT 研究導讀：如何讀懂等候組比較",
+      "summary": "一項個人情緒取向治療試驗提供症狀變化資料，也提醒我們留意比較對象與適用範圍。",
+      "articleType": "研究導讀",
+      "published": "2025-07-10",
+      "tags": [
+        "研究導讀",
+        "EFIT",
+        "隨機試驗",
+        "研究方法"
+      ],
+      "learningGoals": [
+        "說明此試驗的對象與比較條件。",
+        "避免把單篇研究推廣成學派優劣排名。"
+      ],
+      "sections": [
+        {
+          "title": "來源日期與資料類型",
+          "paragraphs": [
+            "Wiebe 等人的隨機對照試驗於2025年7月10日首次線上發表。本篇依原始研究摘要整理；ICEEFT於2026年刊登的介紹頁不是研究首發日期。"
+          ],
+          "items": []
+        },
+        {
+          "title": "研究怎麼做",
+          "paragraphs": [
+            "88位符合重鬱症且伴隨焦慮條件的參與者，隨機分為兩組，各44人：一組接受15次 EFIT，另一組等候15週。"
+          ],
+          "items": []
+        },
+        {
+          "title": "主要發現",
+          "paragraphs": [
+            "研究比較整體症狀困擾、憂鬱與焦慮的變化軌跡。兩組有顯著差異，EFIT組在15週期間呈現症狀改善。"
+          ],
+          "items": []
+        },
+        {
+          "title": "如何理解限制",
+          "paragraphs": [
+            "比較對象是等候組，並非另一種積極治療。因此結果不能用來宣稱 EFIT 優於其他學派，也不能直接套用到所有族群、伴侶或家庭治療。"
+          ],
+          "items": []
+        },
+        {
+          "title": "對學習者的意義",
+          "paragraphs": [
+            "這裡的 EFIT 屬 Johnson／ICEEFT 的 Emotionally Focused Individual Therapy。先辨認療法全名、對象與結果指標，再討論研究支持什麼。"
+          ],
+          "items": []
+        }
+      ],
+      "practice": {
+        "prompt": "有人說「這篇研究證明 EFT 最有效」。請指出至少兩個需要修正的地方。",
+        "reflection": [
+          "是否分清兩個 EFT？",
+          "是否交代等候組、研究對象與測量指標？"
+        ]
+      },
+      "mlLens": "隨機化改善因果比較的條件，結論仍依賴對照組與樣本。等候組差異不能直接變成相對其他治療的成效排名。",
+      "related": [
+        "approach-emotionally-focused",
+        "approach-emotion-focused"
+      ],
+      "sources": [
+        {
+          "title": "Wiebe et al.｜原始研究摘要與出版日期（PubMed）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40638305/",
+          "kind": "原始研究摘要",
+          "date": "2025-07-10"
+        },
+        {
+          "title": "ICEEFT｜EFIT 隨機對照試驗介紹",
+          "url": "https://iceeft.com/research-articles/a-randomized-controlled-trial-of-emotionally-focused-individual-therapy-efit-for-depression-and-anxiety/",
+          "kind": "學派官方研究介紹",
+          "date": "2026-04-20"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- CONTENT_DATA_END -->
+  <script id="study-core">
+    /* 【跟生成式AI 協作完成的】筆記合併採保留舊內容，避免匯入時覆蓋自己的想法。 */
+    window.StudyNotebook = (() => {
+      'use strict';
+      const APP = 'tingjian-studyroom';
+      const validId = id => typeof id === 'string' && /^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(id) && !['constructor','prototype'].includes(id);
+      const plain = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+      function empty() { return {schemaVersion:1, app:APP, notes:{}, read:[], saved:[], lastRead:null}; }
+      function validate(value) {
+        if (!plain(value) || value.schemaVersion !== 1 || value.app !== APP || !plain(value.notes)) throw new Error('這不是聽見的第 1 版筆記備份。');
+        if (Object.keys(value.notes).length > 2000) throw new Error('備份筆記數量過多。');
+        const result = empty();
+        for (const [id, note] of Object.entries(value.notes)) {
+          if (!validId(id) || !plain(note) || typeof note.text !== 'string' || note.text.length > 50000 || typeof note.updated !== 'string' || !/^\d{4}-\d{2}-\d{2}T/.test(note.updated) || !Number.isFinite(Date.parse(note.updated))) throw new Error('備份含有格式不正確的筆記。');
+          result.notes[id] = {text:note.text, updated:note.updated};
+        }
+        for (const key of ['read','saved']) {
+          if (!Array.isArray(value[key]) || value[key].length > 2000 || value[key].some(id => !validId(id))) throw new Error('備份的閱讀或收藏清單格式不正確。');
+          result[key] = [...new Set(value[key])];
+        }
+        if (value.lastRead !== null && !validId(value.lastRead)) throw new Error('備份的閱讀位置格式不正確。');
+        result.lastRead = value.lastRead;
+        return result;
+      }
+      function merge(current, incoming) {
+        const result = validate(current), other = validate(incoming), conflicts = [];
+        let added = 0;
+        for (const [id, note] of Object.entries(other.notes)) {
+          const existing = result.notes[id];
+          if (existing && existing.text.trim() && existing.text !== note.text) { conflicts.push(id); continue; }
+          if (!existing || existing.text !== note.text) { result.notes[id] = {...note}; added++; }
+        }
+        result.read = [...new Set([...result.read,...other.read])];
+        result.saved = [...new Set([...result.saved,...other.saved])];
+        if (!result.lastRead) result.lastRead = other.lastRead;
+        return {state:validate(result), added, conflicts};
+      }
+      return {empty, validate, merge};
+    })();
+  </script>
+  <script id="site-app">
+    /* 【跟生成式AI 協作完成的】同一份文章資料共用列表、搜尋與內頁，新增時不用重寫頁面。 */
+    (() => {
+      'use strict';
+      const DATA = JSON.parse(document.getElementById('site-content').textContent);
+      const ARTICLES = DATA.articles;
+      const byId = new Map(ARTICLES.map(article => [article.id, article]));
+      const categories = new Map(DATA.categories.map(category => [category.id, category]));
+      const main = document.getElementById('main');
+      const KEY = 'tingjian-studyroom-v1';
+      const Core = window.StudyNotebook;
+      let state = Core.empty(), storageFailed = false, readBlocked = false, concurrentChange = false, storageSnapshot = null, importMessage = '', toastTimer;
+      let currentRoute = {type:'home'}, currentFilter = 'all';
+      const e = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+      const iconPaths = {
+        arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>', search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
+        book:'<path d="M12 6C8 3 4 4 2 5v15c4-2 7-1 10 1 3-2 6-3 10-1V5c-2-1-6-2-10 1ZM12 6v15"/>',
+        bookmark:'<path d="M6 3h12v18l-6-4-6 4Z"/>', check:'<path d="m5 12 4 4L19 6"/>',
+        leaf:'<path d="M5 20C3 8 11 3 21 3c0 10-4 17-13 15M4 21 17 8"/>',
+        layers:'<path d="m12 3 10 6-10 6L2 9l10-6ZM2 13l10 6 10-6M2 17l10 6 10-6"/>',
+        path:'<circle cx="5" cy="5" r="2"/><circle cx="19" cy="19" r="2"/><path d="M7 5h9a4 4 0 0 1 0 8H8a3 3 0 0 0 0 6h9"/>',
+        sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/>',
+        note:'<path d="M5 3h13a1 1 0 0 1 1 1v17H6a3 3 0 0 1-3-3V5a2 2 0 0 1 2-2ZM7 3v14M3 17h16M10 8h6M10 11h4"/>',
+        download:'<path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/>', code:'<path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/>',
+        clock:'<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>'
+      };
+      const icon = name => '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">'+(iconPaths[name] || iconPaths.book)+'</svg>';
+      const categoryIcon = {basics:'leaf',approaches:'layers',strategies:'path',updates:'sun'};
+      const listFor = id => ARTICLES.filter(article => article.category === id).sort((a,b) => a.order-b.order);
+      const articleLink = article => '#article/'+encodeURIComponent(article.id);
+      const noteCount = () => Object.values(state.notes).filter(note => note.text.trim()).length;
+      const safeUrl = url => { try { const parsed = new URL(url); return ['https:','http:'].includes(parsed.protocol) ? parsed.href : ''; } catch { return ''; } };
+      function loadState() {
+        try { const raw = localStorage.getItem(KEY); if (raw) state = Core.validate(JSON.parse(raw)); storageSnapshot = raw; }
+        catch { readBlocked = true; storageFailed = true; }
+      }
+      function persist() {
+        if (readBlocked || concurrentChange) { storageFailed = true; updateStorageUI(); return false; }
+        try {
+          // 多開一個分頁也不能用舊資料蓋掉剛寫好的筆記。
+          if (localStorage.getItem(KEY) !== storageSnapshot) {
+            concurrentChange = true; storageFailed = true; updateStorageUI(); return false;
+          }
+          const serialized = JSON.stringify(state);
+          localStorage.setItem(KEY, serialized); storageSnapshot = serialized; storageFailed = false;
+        }
+        catch { storageFailed = true; }
+        updateStorageUI();
+        return !storageFailed;
+      }
+      function updateStorageUI() {
+        const banner = document.getElementById('storage-warning');
+        banner.hidden = !storageFailed;
+        banner.textContent = concurrentChange ? '其他分頁已更新筆記。為避免互相覆蓋，本頁暫停儲存；輸入仍保留在此頁。請先到「我的筆記」匯出本頁備份，重新整理後再匯入。' : readBlocked ? '目前無法安全讀取原有筆記，因此沒有覆寫瀏覽器資料。本次輸入暫存於此頁，請到「我的筆記」匯出備份後再離開。' : '筆記尚未儲存到瀏覽器，可能是儲存空間或隱私設定限制。輸入仍保留在此頁，請到「我的筆記」匯出備份後再離開。';
+        document.getElementById('note-count').textContent = String(noteCount());
+        document.querySelectorAll('[data-note-status]').forEach(el => {
+          const note = state.notes[el.dataset.noteStatus];
+          el.classList.toggle('error', storageFailed);
+          el.textContent = storageFailed ? '尚未儲存 · 請先匯出備份' : note ? '已儲存在這個瀏覽器' : '輸入後自動儲存';
+        });
+      }
+      function toast(message) {
+        const el = document.getElementById('toast');
+        el.textContent = message; el.classList.add('visible');
+        clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('visible'), 3500);
+      }
+      function bookmarkButton(article) {
+        const saved = state.saved.includes(article.id);
+        return '<button class="icon-button" data-action="save" data-id="'+e(article.id)+'" aria-label="'+(saved?'取消收藏：':'收藏：')+e(article.title)+'" aria-pressed="'+saved+'">'+icon('bookmark')+'</button>';
+      }
+      function articleCard(article, number) {
+        const cat = categories.get(article.category);
+        return '<article class="reading-card"><a class="card-main" href="'+articleLink(article)+'"><div class="card-meta"><span class="pill">'+e(cat.title)+'</span><span>'+article.minutes+' 分鐘</span>'+(state.read.includes(article.id)?'<span>✓ 已讀</span>':'')+'</div><h3>'+e(article.title)+'</h3><p>'+e(article.summary)+'</p></a><div class="card-footer">'+(number?'<span class="starter-num">'+String(number).padStart(2,'0')+'</span>':'<span>'+e(article.level)+'</span>')+'<span style="margin-left:auto">'+icon('arrow')+'</span>'+bookmarkButton(article)+'</div></article>';
+      }
+      function lessonRow(article, index) {
+        return '<article class="lesson-row"><a class="lesson-main" href="'+articleLink(article)+'"><span class="lesson-number">'+String(index).padStart(2,'0')+'</span><div><div class="tag-line"><span>'+e(categories.get(article.category).title)+'</span><span>'+e(article.level)+'</span>'+(state.read.includes(article.id)?'<span>✓ 已讀</span>':'')+'</div><h2>'+e(article.title)+'</h2><p>'+e(article.summary)+'</p></div><span class="lesson-time">'+article.minutes+' 分鐘</span></a>'+bookmarkButton(article)+'</article>';
+      }
+      function crumbs(category) {
+        return '<nav class="breadcrumbs" aria-label="閱讀位置"><a href="#home">首頁</a><span aria-hidden="true">／</span>'+(category?'<a href="#category/'+e(category.id)+'">'+e(category.title)+'</a>':'')+'</nav>';
+      }
+      function searchForm(query='', extra='') {
+        return '<form class="search-form '+extra+'" data-search-form role="search">'+icon('search')+'<label class="sr-only" for="search-input">搜尋教材</label><input id="search-input" name="q" type="search" maxlength="120" value="'+e(query)+'" placeholder="找一項技巧，或一個想釐清的概念" autocomplete="off"><button type="submit">搜尋 '+icon('arrow')+'</button></form>';
+      }
+      function heroArt() {
+        return '<div class="hero-art" aria-hidden="true"><svg viewBox="0 0 440 360" fill="none"><path d="M76 284V139a132 132 0 0 1 264 0v145" fill="#e6ebdf"/><path d="M101 283V144a107 107 0 0 1 214 0v139" fill="#f3f1e8" stroke="#a9b79c" stroke-width="1.2"/><path d="M208 38v243M103 160h210" stroke="#c5cdb9" stroke-width="1.2"/><path d="M316 284c10-54 33-88 38-135" stroke="#687c60" stroke-width="2"/><path d="M340 213c-23-1-38-15-36-40 23 2 36 14 36 40ZM351 180c0-27 10-45 29-53 5 25-5 43-29 53ZM325 251c-27-2-43-18-43-40 24 4 42 17 43 40ZM334 229c7-26 23-36 47-34-9 25-24 37-47 34Z" fill="#a6b594"/><path d="M305 279h48l-7 41h-33l-8-41Z" fill="#cbb99a"/><ellipse cx="218" cy="323" rx="169" ry="13" fill="#d7d9ca" opacity=".55"/><path d="M65 295h187l20 17H84l-19-17Z" fill="#a3b095"/><path d="M84 312h188v7H84z" fill="#efebda"/><path d="m114 267 82-8 62 28-86 11-58-31Z" fill="#fdfbf3" stroke="#9aa88e" stroke-width="1.2"/><path d="m172 298 24-39M114 267v8l58 30 86-12v-6" stroke="#9aa88e" stroke-width="1.2"/><path d="m126 269 44 23m-32-26 40 21m28-18 35 17m-40-11 29 14" stroke="#c2cbb8"/><path d="M82 259c-1-20 8-35 25-44M89 243c-19-5-25-17-24-31 18 3 26 15 24 31ZM94 232c0-17 12-25 27-25-2 17-10 24-27 25Z" fill="#c5cfb6"/><circle cx="268" cy="103" r="22" fill="#e5cfaa" opacity=".65"/><path d="M51 321h340" stroke="#a1af92" stroke-width="1.2"/><circle cx="373" cy="81" r="3" fill="#bcb98e"/><circle cx="49" cy="173" r="2" fill="#bcb98e"/></svg><span class="art-caption">理解，在一次次閱讀裡生長。</span></div>';
+      }
+      function home() {
+        const starter = listFor('basics').slice(0,3);
+        const news = listFor('updates').slice().sort((a,b) => b.published.localeCompare(a.published)).slice(0,3);
+        const last = byId.get(state.lastRead);
+        return '<section class="hero"><div class="hero-copy"><div class="eyebrow">A small space for learning</div><h1>從一句回應，<br>慢慢讀懂<em>諮商</em>。</h1><p>把技巧、學派與實際情境放在一起理解。<br>不急著找到標準答案，先練習聽見一個人的意思。</p><div class="hero-actions"><a class="btn" href="#category/basics">從基礎開始 '+icon('arrow')+'</a><a class="btn btn-secondary" href="#category/approaches">探索不同學派</a></div><p class="hero-caption">給諮商初學者，也給想跨領域理解的你。</p></div>'+heroArt()+'</section><div class="search-band"><p>今天，想多理解什麼？</p>'+searchForm()+'</div>'+(last?'<div class="continue-strip"><div><small>接續上次的閱讀</small><strong>'+e(last.title)+'</strong></div><a class="text-link" href="'+articleLink(last)+'">繼續閱讀 '+icon('arrow')+'</a></div>':'')+'<section class="section"><div class="section-heading"><div><div class="eyebrow">Explore the library</div><h2>四個主題，一步一步學</h2><p>從一句話的技巧，到理解它背後的想法。</p></div><span class="small muted">'+ARTICLES.length+' 篇學習素材</span></div><div class="topics-grid">'+DATA.categories.map(cat=>'<a class="topic-card" href="#category/'+e(cat.id)+'"><div class="topic-top"><span class="topic-number">'+e(cat.number)+'</span>'+icon(categoryIcon[cat.id])+'</div><h3>'+e(cat.title)+'</h3><p>'+e(cat.description)+'</p><div class="topic-footer"><span>'+listFor(cat.id).length+' 篇 · 推薦順序閱讀</span>'+icon('arrow')+'</div></a>').join('')+'</div></section><section class="section"><div class="section-heading"><div><div class="eyebrow">Start with the essentials</div><h2>第一次來，從這裡開始</h2><p>先練習邀請對方說，再確認自己聽懂了什麼。</p></div><a class="text-link" href="#category/basics">全部基礎技巧 '+icon('arrow')+'</a></div><div class="reading-grid">'+starter.map((a,i)=>articleCard(a,i+1)).join('')+'</div></section><section class="quote-band">'+icon('leaf')+'<div><div class="eyebrow">A note for curious minds</div><h2>技術是理解的工具，關係是練習的起點。</h2><p>每篇都有小練習和筆記區。若你來自機器學習領域，也可以看看「跨領域想一想」，練習辨認概念與資料標記之間的距離。</p></div></section><section class="section"><div class="section-heading"><div><div class="eyebrow">Research & perspectives</div><h2>帶著問題，閱讀新知</h2><p>精選研究與專業消息；日期標示原始發布時間。</p></div><a class="text-link" href="#category/updates">更多導讀 '+icon('arrow')+'</a></div><div class="news-list">'+news.map(a=>'<a class="news-row" href="'+articleLink(a)+'"><time datetime="'+e(a.published)+'">'+e(a.published)+'</time><div><span class="eyebrow">'+e(a.articleType||'研究導讀')+'</span><h3>'+e(a.title)+'</h3><p>'+e(a.summary)+'</p></div>'+icon('arrow')+'</a>').join('')+'</div></section>';
+      }
+      function categoryPage(id) {
+        const cat = categories.get(id);
+        if (!cat) return notFound();
+        const all = listFor(id), readCount = all.filter(a=>state.read.includes(a.id)).length;
+        const filtered = all.filter(a=>currentFilter==='unread'?!state.read.includes(a.id):currentFilter==='saved'?state.saved.includes(a.id):true);
+        return '<div class="page-head">'+crumbs(cat)+'<div class="eyebrow">'+e(cat.number)+' / '+e(cat.kicker)+'</div><h1>'+e(cat.title)+'</h1><p class="intro">'+e(cat.description)+' '+(id==='basics'?'建議先讀探問、重述與初層次同理心，再逐步往更細緻的回應前進。':id==='approaches'?'先理解各取向關注什麼，再比較它們如何看待情緒、想法與關係。':id==='strategies'?'先看情境與目的，再決定技術的順序；每一種選擇都保留調整空間。':'這裡整理值得慢慢讀的資料，並列出原始日期、研究限制與學習意義。')+'</p><div class="category-summary"><div class="progress-track" role="progressbar" aria-label="閱讀篇數" aria-valuenow="'+readCount+'" aria-valuemin="0" aria-valuemax="'+all.length+'"><span style="width:'+(all.length?readCount/all.length*100:0)+'%"></span></div><span>已讀 '+readCount+' / '+all.length+' 篇</span><span>記錄閱讀，不代表專業能力評分</span></div></div><div class="list-toolbar"><div class="filter-group" aria-label="文章篩選">'+[['all','全部教材'],['unread','還沒讀過'],['saved','我的收藏']].map(([value,label])=>'<button class="filter" data-filter="'+value+'" aria-pressed="'+(currentFilter===value)+'">'+label+'</button>').join('')+'</div><span class="small muted">依推薦順序排列 · '+filtered.length+' 篇</span></div>'+(filtered.length?'<div class="lesson-list">'+filtered.map(a=>lessonRow(a,all.indexOf(a)+1)).join('')+'</div>':emptyState('這個清單目前是空的','可以切回全部教材，挑一篇想開始的文章。','全部教材','#category/'+id));
+      }
+      function notePanel(article) {
+        const note = state.notes[article.id];
+        return '<aside class="sidebar" aria-label="閱讀筆記"><section class="note-panel" id="article-notes"><h2>'+icon('note')+'記下自己的理解</h2><p>一句觀察、一個疑問，或是你的練習回應，都可以寫在這裡。</p><label class="sr-only" for="article-note">'+e(article.title)+'的閱讀筆記</label><textarea class="note-input" id="article-note" data-note="'+e(article.id)+'" maxlength="50000" placeholder="我注意到……&#10;我還想問……&#10;如果是我，可以這樣回應……">'+e(note?.text||'')+'</textarea><div class="note-status" data-note-status="'+e(article.id)+'" aria-live="polite"></div><div class="panel-actions"><button class="btn btn-secondary" data-action="read" data-id="'+e(article.id)+'" aria-pressed="'+state.read.includes(article.id)+'">'+icon('check')+(state.read.includes(article.id)?'已標記已讀':'標記已讀')+'</button><button class="btn btn-secondary" data-action="save" data-id="'+e(article.id)+'" aria-pressed="'+state.saved.includes(article.id)+'">'+icon('bookmark')+(state.saved.includes(article.id)?'已收藏':'收藏文章')+'</button></div><p class="local-note">筆記只存在目前瀏覽器，沒有帳號或雲端同步。清除瀏覽器資料前，記得到<a class="text-link" href="#notes" style="font-size:inherit;text-decoration:underline">我的筆記</a>匯出備份。</p></section><nav class="toc" aria-label="文章段落"><h2>這一篇的閱讀路徑</h2>'+article.sections.map((section,i)=>'<button data-scroll="section-'+i+'">'+String(i+1).padStart(2,'0')+'　'+e(section.title)+'</button>').join('')+'<button data-scroll="practice">練習看看</button></nav></aside>';
+      }
+      function articlePage(id) {
+        const a = byId.get(id);
+        if (!a) return notFound();
+        const cat=categories.get(a.category), ordered=listFor(a.category), index=ordered.findIndex(item=>item.id===a.id), prev=ordered[index-1], next=ordered[index+1];
+        const example = a.example?'<section class="example-box"><div class="box-heading"><div class="eyebrow">A fictional example</div><h2>放進一句對話裡</h2><p>'+e(a.example.context)+'</p></div><div class="example-body"><p class="client-line">「'+e(a.example.client)+'」</p><div class="response-block"><span class="response-label">可以再調整的回應</span><p>「'+e(a.example.lessHelpful)+'」</p></div><div class="response-block better"><span class="response-label">一種可以參考的說法</span><p>「'+e(a.example.response)+'」</p></div><p class="response-explanation">'+e(a.example.explanation)+'</p></div></section>':'';
+        return '<div class="page-head article-head">'+crumbs(cat)+'<div class="eyebrow">'+e(cat.number)+' / '+e(a.articleType||cat.title)+'</div><h1>'+e(a.title)+'</h1><p class="article-summary">'+e(a.summary)+'</p><div class="article-meta"><span>'+icon('clock')+' '+a.minutes+' 分鐘</span><span>'+e(a.level)+'</span><span>整理：'+e(a.updated)+'</span>'+(a.published?'<span>原始發布：'+e(a.published)+'</span>':'')+'</div></div><div class="article-layout"><article class="article-body"><section class="learning-goals"><h2>讀完這篇，我想能夠……</h2><ul>'+a.learningGoals.map(goal=>'<li>'+e(goal)+'</li>').join('')+'</ul></section>'+a.sections.map((section,i)=>'<section class="article-section" id="section-'+i+'"><h2><span class="section-index">'+String(i+1).padStart(2,'0')+'</span>'+e(section.title)+'</h2>'+section.paragraphs.map(p=>'<p>'+e(p)+'</p>').join('')+(section.items.length?'<ul>'+section.items.map(item=>'<li>'+e(item)+'</li>').join('')+'</ul>':'')+'</section>').join('')+example+'<section class="practice-box" id="practice"><div class="eyebrow">Pause & practice</div><h2>停一下，換自己試試看</h2><p>'+e(a.practice.prompt)+'</p><ul>'+a.practice.reflection.map(item=>'<li>'+e(item)+'</li>').join('')+'</ul><button class="btn btn-secondary btn-small" data-action="focus-note">把想法寫進筆記 '+icon('arrow')+'</button></section>'+(a.mlLens?'<section class="ml-box"><h2>'+icon('code')+'跨領域想一想</h2><p>'+e(a.mlLens)+'</p></section>':'')+'<details class="sources"><summary>資料來源與整理說明（'+a.sources.length+'）</summary><ol>'+a.sources.map(s=>'<li><a href="'+e(safeUrl(s.url))+'" target="_blank" rel="noopener noreferrer">'+e(s.title)+'</a><br><span class="muted">'+e(s.kind)+(s.date?' · '+e(s.date):' · 來源日期未註明')+'</span></li>').join('')+'</ol><p class="collaboration-note">'+e(a.aiCollaboration)+'</p></details><section class="related-section"><h2>接著，也可以讀</h2><div class="related-links">'+a.related.map(id=>byId.get(id)).filter(Boolean).map(r=>'<a href="'+articleLink(r)+'">'+e(r.title)+' ↗</a>').join('')+'</div></section><nav class="article-nav" aria-label="推薦閱讀順序">'+(prev?'<a href="'+articleLink(prev)+'"><small>← 上一篇</small>'+e(prev.title)+'</a>':'<span></span>')+(next?'<a href="'+articleLink(next)+'"><small>下一篇 →</small>'+e(next.title)+'</a>':'<a href="#category/'+e(cat.id)+'"><small>已到這個主題的最後一篇</small>回到主題清單 →</a>')+'</nav></article>'+notePanel(a)+'</div>';
+      }
+      function emptyState(title,description,label,href) {
+        return '<section class="empty-state">'+icon('book')+'<h2>'+e(title)+'</h2><p>'+e(description)+'</p><a class="btn btn-secondary btn-small" href="'+e(href)+'" data-reset-filter>'+e(label)+' '+icon('arrow')+'</a></section>';
+      }
+      function searchPage(query) {
+        const terms = query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+        const matches = terms.length ? ARTICLES.filter(a=>{
+          const haystack=[a.title,a.summary,...a.tags,...a.learningGoals,...a.sections.flatMap(s=>[s.title,...s.paragraphs,...s.items]),...Object.values(a.example||{}),a.practice.prompt,...a.practice.reflection,a.mlLens||''].join(' ').toLocaleLowerCase();
+          return terms.every(term=>haystack.includes(term));
+        }) : [];
+        return '<div class="page-head">'+crumbs()+'<div class="eyebrow">Find your next question</div><h1>找一個想理解的主題</h1><p class="intro">可以搜尋技巧名稱、英文縮寫，或內文裡的一個關鍵字。</p></div>'+searchForm(query,'search-page-form')+'<div class="search-suggestions">'+['同理','AEDP','EFT','機器學習'].map(term=>'<a href="#search/'+encodeURIComponent(term)+'">'+e(term)+'</a>').join('')+'</div>'+(terms.length?'<div class="list-toolbar"><span class="small muted">「'+e(query)+'」找到 '+matches.length+' 篇教材</span></div>'+(matches.length?'<div class="lesson-list">'+matches.map((a,i)=>lessonRow(a,i+1)).join('')+'</div>':emptyState('還沒找到符合的教材','試著改用較短的詞，像是「情緒」「重述」或「EFT」。','瀏覽所有主題','#home')):emptyState('每個問題，都可以是一個起點','輸入關鍵字，或先從上方常見主題開始。','先看基礎技巧','#category/basics'));
+      }
+      function notesPage() {
+        const notes = Object.entries(state.notes).filter(([,n])=>n.text.trim()).sort((a,b)=>b[1].updated.localeCompare(a[1].updated));
+        const saved = state.saved.map(id=>byId.get(id)).filter(Boolean);
+        return '<div class="page-head">'+crumbs()+'<div class="eyebrow">My learning notebook</div><h1>把理解，慢慢寫成自己的話</h1><p class="intro">這裡收好你的閱讀筆記與收藏。沒有進度競賽，只有一次比一次更清楚的理解。</p></div><section class="notes-toolbar" aria-label="備份筆記"><p>筆記只存在目前瀏覽器，不會自動跨裝置同步。<br>JSON 可以備份及還原；Markdown 適合留存、整理與分享。</p><div class="export-actions"><button class="btn btn-secondary btn-small" data-action="export-json">'+icon('download')+'JSON 備份</button><button class="btn btn-secondary btn-small" data-action="import">匯入筆記</button><button class="btn btn-secondary btn-small" data-action="export-md">匯出 Markdown</button></div></section>'+(importMessage?'<div class="import-result" role="status">'+e(importMessage)+'</div>':'')+'<div class="section-heading"><h2>我的筆記 <span class="small muted">'+notes.length+' 篇</span></h2></div>'+(notes.length?'<div class="note-list">'+notes.map(([id,n],i)=>{const a=byId.get(id);return '<section class="saved-note"><div class="saved-note-header"><div><span class="eyebrow">'+(a?e(categories.get(a.category).title):'保留的舊筆記')+'</span><h2>'+(a?'<a href="'+articleLink(a)+'">'+e(a.title)+'</a>':e(id))+'</h2></div>'+(a?'<a class="text-link" href="'+articleLink(a)+'">回到文章 '+icon('arrow')+'</a>':'')+'</div><label class="sr-only" for="saved-note-'+i+'">'+e(a?.title||id)+'的筆記</label><textarea class="note-input" id="saved-note-'+i+'" data-note="'+e(id)+'" maxlength="50000">'+e(n.text)+'</textarea><div class="note-status" data-note-status="'+e(id)+'" aria-live="polite"></div></section>';}).join('')+'</div>':emptyState('第一篇筆記，從一個小問題開始','在文章旁寫下想法，筆記就會整理到這裡。收藏的文章也會保留在下方。','挑一篇開始閱讀','#category/basics'))+'<section class="saved-list"><div class="section-heading"><h2>留著，之後再讀 <span class="small muted">'+saved.length+' 篇</span></h2></div>'+(saved.length?'<div class="lesson-list">'+saved.map((a,i)=>lessonRow(a,i+1)).join('')+'</div>':'<p class="small muted">點選文章上的書籤，就可以把想讀的教材放在這裡。</p>')+'</section>';
+      }
+      function notFound() { return '<div class="page-head"><div class="eyebrow">Let’s find another path</div><h1>這一頁暫時找不到</h1></div>'+emptyState('換一條閱讀路徑','原有筆記仍然保留。你可以回首頁，從四個主題重新選擇。','回到首頁','#home'); }
+      function getRoute() {
+        const pieces=location.hash.replace(/^#/,'').split('/');
+        let value=''; try { value=decodeURIComponent(pieces.slice(1).join('/')); } catch { return {type:'missing'}; }
+        return {type:pieces[0]||'home',value};
+      }
+      function render({keepScroll=false,focusMain=false}={}) {
+        const y=window.scrollY, route=getRoute();
+        if (route.type!==currentRoute.type || route.value!==currentRoute.value) currentFilter='all';
+        currentRoute=route;
+        let title='';
+        if(route.type==='home'){main.innerHTML=home();}
+        else if(route.type==='category'){main.innerHTML=categoryPage(route.value);title=categories.get(route.value)?.title||'找不到頁面';}
+        else if(route.type==='article'){main.innerHTML=articlePage(route.value);const a=byId.get(route.value);title=a?.title||'找不到頁面';if(a){state.lastRead=a.id;persist();}}
+        else if(route.type==='search'){main.innerHTML=searchPage(route.value||'');title='搜尋教材';}
+        else if(route.type==='notes'){main.innerHTML=notesPage();title='我的筆記';}
+        else {main.innerHTML=notFound();title='找不到頁面';}
+        document.title=(title?title+'｜':'')+DATA.site.title;
+        const active=route.type==='category'?route.value:route.type==='article'?byId.get(route.value)?.category:null;
+        document.querySelectorAll('[data-category-nav]').forEach(link=>{if(link.dataset.categoryNav===active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');});
+        updateStorageUI();
+        if (focusMain) main.focus({preventScroll:true});
+        window.scrollTo({top:keepScroll?y:0,behavior:'instant'});
+      }
+      function download(name,text,type) {
+        const url=URL.createObjectURL(new Blob([text],{type}));
+        const link=document.createElement('a');link.href=url;link.download=name;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
+      }
+      function backup() {return {...state, exportedAt:new Date().toISOString()};}
+      function exportMarkdown() {
+        const lines=['# 聽見｜我的閱讀筆記','','匯出時間：'+new Date().toLocaleString('zh-TW'),''];
+        const notes=Object.entries(state.notes).filter(([,n])=>n.text.trim());
+        if(!notes.length)lines.push('目前還沒有筆記。','');
+        for(const [id,n]of notes){const a=byId.get(id);lines.push('## '+(a?.title||id),'','文章識別碼：'+id,'','最後編輯：'+n.updated,'',...n.text.split('\n').map(line=>'> '+line),'');}
+        lines.push('## 已讀文章','',...state.read.map(id=>'- '+(byId.get(id)?.title||id)),'','## 收藏文章','',...state.saved.map(id=>'- '+(byId.get(id)?.title||id)),'');
+        download('聽見-閱讀筆記-'+new Date().toISOString().slice(0,10)+'.md',lines.join('\n'),'text/markdown;charset=utf-8');
+      }
+      document.getElementById('primary-nav').innerHTML=DATA.categories.map(cat=>'<a href="#category/'+e(cat.id)+'" data-category-nav="'+e(cat.id)+'">'+e(cat.title)+'</a>').join('');
+      document.addEventListener('submit',event=>{
+        if(!event.target.matches('[data-search-form]'))return;
+        event.preventDefault();const query=new FormData(event.target).get('q').trim().slice(0,120);const hash='#search/'+encodeURIComponent(query);
+        if(location.hash===hash)render({focusMain:true});else location.hash=hash;
+      });
+      document.addEventListener('input',event=>{
+        const field=event.target;if(!field.matches('[data-note]'))return;
+        state.notes[field.dataset.note]={text:field.value,updated:new Date().toISOString()};persist();
+      });
+      document.addEventListener('click',event=>{
+        const button=event.target.closest('[data-action],[data-filter],[data-scroll],[data-reset-filter],#skip-main');
+        if(!button)return;
+        if(button.id==='skip-main'){event.preventDefault();main.focus();return;}
+        if(button.hasAttribute('data-reset-filter')){currentFilter='all';if(button.getAttribute('href')===location.hash){event.preventDefault();render({focusMain:true});}return;}
+        if(button.dataset.scroll){document.getElementById(button.dataset.scroll)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});return;}
+        if(button.dataset.filter){currentFilter=button.dataset.filter;render({keepScroll:true});document.querySelector('[data-filter="'+currentFilter+'"]')?.focus({preventScroll:true});return;}
+        const action=button.dataset.action,id=button.dataset.id;
+        if(action==='focus-note'){const note=document.getElementById('article-note');note?.scrollIntoView({block:'center',behavior:'instant'});note?.focus({preventScroll:true});}
+        if(action==='save'||action==='read'){
+          const key=action==='save'?'saved':'read',has=state[key].includes(id);
+          state[key]=has?state[key].filter(item=>item!==id):[...state[key],id];
+          const ok=persist();render({keepScroll:true});
+          document.querySelector('[data-action="'+action+'"][data-id="'+id+'"]')?.focus({preventScroll:true});
+          toast((has?(action==='save'?'已取消收藏':'已取消已讀標記'):(action==='save'?'已加入收藏':'已標記已讀'))+(ok?'':'（目前暫存於此頁）'));
+        }
+        if(action==='export-json')download('聽見-筆記備份-'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify(backup(),null,2),'application/json;charset=utf-8');
+        if(action==='export-md')exportMarkdown();
+        if(action==='import')document.getElementById('import-file').click();
+      });
+      document.getElementById('import-file').addEventListener('change',async event=>{
+        const file=event.target.files[0];if(!file)return;
+        try {
+          if(file.size>5*1024*1024)throw new Error('備份檔請小於 5 MB。');
+          const merged=Core.merge(state,JSON.parse(await file.text()));state=merged.state;const ok=persist();
+          importMessage='已匯入 '+merged.added+' 篇筆記，並合併已讀與收藏清單。'+(merged.conflicts.length?'\n以下 '+merged.conflicts.length+' 篇內容不同，已保留原有筆記，沒有覆寫：'+merged.conflicts.map(id=>byId.get(id)?.title||id).join('、'):'\n沒有覆蓋任何不同內容的舊筆記。')+(ok?'':'\n目前尚未儲存到瀏覽器，請立即匯出合併後的備份。');
+        } catch(error) {importMessage='沒有匯入：'+(error instanceof SyntaxError?'檔案不是有效的 JSON 備份。':error.message);}
+        event.target.value='';
+        if(location.hash==='#notes')render({keepScroll:true});else location.hash='#notes';
+      });
+      window.addEventListener('hashchange',()=>render({focusMain:true}));
+      window.addEventListener('beforeunload',event=>{if(storageFailed&&noteCount()){event.preventDefault();event.returnValue='';}});
+      loadState();render();
+    })();
+  </script>
+</body>
+</html>
